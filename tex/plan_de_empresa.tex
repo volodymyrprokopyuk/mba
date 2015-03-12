@@ -1,13 +1,28 @@
+\starttypescript[sans][SourcePro]
+\definefontsynonym[Sans][name:sourcesanspro]
+\definefontsynonym[SansBold][name:sourcesansprobold]
+\definefontsynonym[SansItalic][name:sourcesansproit]
+\stoptypescript
+\definetypeface[SourcePro][ss][sans][SourcePro]
+\setupbodyfont[SourcePro,sans,14pt]
+
 \setuplayout[backspace=80pt,edge=0pt,edgedistance=5pt,
   margin=70pt,margindistance=5pt,width=fit,
   topspace=40pt,top=35pt,topdistance=5pt,header=20pt,headerdistance=10pt,
   footer=20pt,footerdistance=10pt,bottom=40pt,bottomdistance=5pt,height=fit]
-\showframe
 
 \setuppagenumbering[location={footer,right}]
-
 \setupheadertexts[{\hfill\getmarking[section]}]
 
 \starttext
 \section{Svitlana}
+
+\tf
+How to display the chapter number in the headers in ConTeXt?
+
+\bf
+How to display the chapter number in the headers in ConTeXt?
+
+\it
+How to display the chapter number in the headers in ConTeXt?
 \stoptext
