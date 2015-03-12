@@ -2,6 +2,14 @@
 
 \mainlanguage[en]
 
+\definefontsynonym[Awesome][name:fontawesome]
+\definesymbol[AwOK][\getnamedglyphdirect{Awesome}{ok}]
+\define\AwOK{\symbol[AwOK]}
+\definesymbol[AwArrowRight][\getnamedglyphdirect{Awesome}{arrow_right}]
+\define\AwArrowRight{\symbol[AwArrowRight]}
+\definesymbol[AwLongArrowRight][\getnamedglyphdirect{Awesome}{long_arrow_right}]
+\define\AwLongArrowRight{\symbol[AwLongArrowRight]}
+
 \starttypescript[sans][SourcePro]
 \definefontsynonym[Sans][name:sourcesanspro]
 \definefontsynonym[SansBold][name:sourcesansprobold]
@@ -19,7 +27,9 @@
 \setuppagenumbering[location=]
 \stopsectionblockenvironment
 \setuppagenumbering[location={footer,right}]
-\setupheadertexts[{\hfill\getmarking[section]}]
+\setupheadertexts[{\hfill\getmarking[chapter]}]
 
 \setupinteraction[state=start]
+
+\define[1]\Comment{{\darkgray #1}}
 \stopenvironment
