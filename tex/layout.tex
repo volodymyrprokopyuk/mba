@@ -9,6 +9,8 @@
 \define\AwArrowRight{\symbol[AwArrowRight]}
 \definesymbol[AwLongArrowRight][\getnamedglyphdirect{Awesome}{long_arrow_right}]
 \define\AwLongArrowRight{\symbol[AwLongArrowRight]}
+\definesymbol[AwCaretRight][\getnamedglyphdirect{Awesome}{caret_right}]
+\define\AwCaretRight{\symbol[AwCaretRight]}
 
 \starttypescript[sans][SourcePro]
 \definefontsynonym[Sans][name:sourcesanspro]
@@ -28,6 +30,9 @@
 \stopsectionblockenvironment
 \setuppagenumbering[location={footer,right}]
 \setupheadertexts[{\hfill\getmarking[chapter]}]
+
+\definesymbol[1][{\AwOK}]
+\definesymbol[2][{\AwCaretRight}]
 
 \setupinteraction[state=start]
 
