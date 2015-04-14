@@ -3,19 +3,21 @@
 \mainlanguage[en]
 
 \definefontsynonym[Awesome][name:fontawesome]
-\definesymbol[AwOK][\getnamedglyphdirect{Awesome}{ok}]
-\define\AwOK{\symbol[AwOK]}
-\definesymbol[AwArrowRight][\getnamedglyphdirect{Awesome}{arrow_right}]
-\define\AwArrowRight{\symbol[AwArrowRight]}
-\definesymbol[AwLongArrowRight][\getnamedglyphdirect{Awesome}{long_arrow_right}]
-\define\AwLongArrowRight{\symbol[AwLongArrowRight]}
+\definesymbol[AwItem][\getnamedglyphdirect{Awesome}{ok}]
+\define\AwItem{\symbol[AwItem]}
+\definesymbol[AwRArrow][\getnamedglyphdirect{Awesome}{arrow_right}]
+\define\AwRArrow{\symbol[AwRArrow]}
+\definesymbol[AwRArrowLong][\getnamedglyphdirect{Awesome}{long_arrow_right}]
+\define\AwRArrowLong{\symbol[AwRArrowLong]}
 \definesymbol[AwCaretRight][\getnamedglyphdirect{Awesome}{caret_right}]
 \define\AwCaretRight{\symbol[AwCaretRight]}
 
+%% SourcePro font
 \starttypescript[sans][SourcePro]
-\definefontsynonym[Sans][name:sourcesanspro]
+\definefontsynonym[Sans][name:sourcesansprolight]
 \definefontsynonym[SansBold][name:sourcesansprobold]
-\definefontsynonym[SansItalic][name:sourcesansproit]
+\definefontsynonym[SansItalic][name:sourcesansprolightit]
+\definefontsynonym[SansBoldItalic][name:sourcesansproit]
 \stoptypescript
 \definetypeface[SourcePro][ss][sans][SourcePro]
 \setupbodyfont[SourcePro,sans,14pt]
@@ -31,8 +33,8 @@
 \setuppagenumbering[location={footer,right}]
 \setupheadertexts[{\hfill\getmarking[chapter]}]
 
-\definesymbol[1][{\AwOK}]
-\definesymbol[2][{\AwCaretRight}]
+\definesymbol[1][{\darkgray\AwItem}]
+\definesymbol[2][{\darkgray\AwCaretRight}]
 
 \setupinteraction[state=start]
 
