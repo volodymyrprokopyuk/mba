@@ -14,6 +14,9 @@ main = shakeArgs shakeOptions { shakeFiles = ".build/" } $ do
     need [ source, "tex/layout.tex" ]
     cmd "bash -c" [ "cd pdf && context --path=../tex " ++ ".." </> source ]
 
+  "upload" ~> do
+    cmd "bash -c" [ "cp pdf/plan_de_empresa.pdf ~/Dropbox/git-newmba" ]
+
   "clean" ~> do
     putNormal "** removing PDFs"
     removeFilesAfter "pdf" [ "*" ]
