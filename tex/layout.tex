@@ -1,7 +1,9 @@
 \startenvironment layout
 
-\mainlanguage[en]
+%% language
+\mainlanguage[es]
 
+%% symbols
 \definefontsynonym[Awesome][name:fontawesome]
 \definesymbol[AwItem][\getnamedglyphdirect{Awesome}{ok}]
 \define\AwItem{\symbol[AwItem]}
@@ -22,21 +24,35 @@
 \definetypeface[SourcePro][ss][sans][SourcePro]
 \setupbodyfont[SourcePro,sans,14pt]
 
+%% layout
 \setuplayout[backspace=80pt,edge=0pt,edgedistance=5pt,
   margin=70pt,margindistance=5pt,width=fit,
   topspace=40pt,top=35pt,topdistance=5pt,header=20pt,headerdistance=10pt,
   footer=20pt,footerdistance=10pt,bottom=40pt,bottomdistance=5pt,height=fit]
 
+%% header and footer
 \startsectionblockenvironment[frontpart]
 \setuppagenumbering[location=]
 \stopsectionblockenvironment
 \setuppagenumbering[location={footer,right}]
-\setupheadertexts[{\hfill\getmarking[chapter]}]
+\setupheadertexts[{\hfill\darkgray\getmarking[chapter]}]
 
+%% headings
+\setuphead[chapter][number=no,style=\bfc\darkgray]
+\setuphead[section][style=\bfb\darkgray]
+\setuphead[subsection][style=\bfa\darkgray]
+
+%% lists
 \definesymbol[1][{\darkgray\AwItem}]
 \definesymbol[2][{\darkgray\AwCaretRight}]
 
+%% interaction
 \setupinteraction[state=start]
 
+%% table of contents
+\setupcombinedlist[content][alternative=c]
+\setuplist[chapter][style=bold]
+
+%% Comment
 \define[1]\Comment{{\darkgray #1}}
 \stopenvironment
