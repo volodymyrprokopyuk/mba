@@ -29,6 +29,7 @@
   margin=70pt,margindistance=5pt,width=fit,
   topspace=40pt,top=35pt,topdistance=5pt,header=20pt,headerdistance=10pt,
   footer=20pt,footerdistance=10pt,bottom=40pt,bottomdistance=5pt,height=fit]
+\setupwhitespace[big]
 
 %% header and footer
 \startsectionblockenvironment[frontpart]
@@ -55,4 +56,8 @@
 
 %% Comment
 \define[1]\Comment{{\darkgray #1}}
+
+%% Paragraph
+\define[1]\Paragraph{{\bf\darkgray #1}}
+
 \stopenvironment
