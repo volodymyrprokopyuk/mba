@@ -48,16 +48,22 @@
 \definesymbol[2][{\darkgray\AwCaretRight}]
 
 %% interaction
-\setupinteraction[state=start]
+\setupinteraction[state=start,style=normal]
 
 %% table of contents
 \setupcombinedlist[content][alternative=c]
 \setuplist[chapter][style=bold]
+
+%% images
+\setupexternalfigures[directory={../tex/img}]
 
 %% Comment
 \define[1]\Comment{{\darkgray #1}}
 
 %% Paragraph
 \define[1]\Paragraph{{\bf\darkgray #1}}
+
+%% Source
+\define[1]\Source{Fuente: {[}\in{}[#1]{]}}
 
 \stopenvironment

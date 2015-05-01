@@ -152,6 +152,7 @@ specific challenges)
 \Comment{Economy, technologies, regulations}
 
 \Paragraph{Virtualización/IaaS (Infrastructure as a Service)}
+\hfill\Source{ref:5-it-industry-trends}
 
 En los últimos años han tenido mucho éxito las tecnologías de virtualización de
 hardware para ofrecer la infraestructura y la plataforma de ejecución para las
@@ -184,6 +185,7 @@ información, mejorar la disponibilidad y la fiabilidad de sistemas, escalar las
 prestaciones segun demanda.
 
 \Paragraph{Nube/SaaS (Software as a Service)}
+\hfill\Source{ref:5-it-industry-trends}
 
 La nube presenta una alternativa muy atractiva al modelo tradocional de mentener
 un centro de proceso de datos por parte de la empresa. El modelo de la nube
@@ -223,6 +225,7 @@ son las siguientes:
 \stopitemize
 
 \Paragraph{Software de código abierto}
+\hfill\Source{ref:3-software-dev-trends}
 
 El papel de software de código abierto sigue creciendo en la infraestructura de
 sistemas de información tanto en las empresas pequeñas y medidas como en las
@@ -253,6 +256,7 @@ abierto ha demostrado su viabilidad y sostenibilidad en las tecnologías de
 informaicón y seguirá creciendo.
 
 \Paragraph{Dispositivos móviles}
+\hfill\Source{ref:5-it-industry-trends}
 
 Cada vez más accesos a Internet se hacen desde los dispositivos móviles. En 2014
 el trafico total de acceso a Internet generado por los teléfonos móviles y los
@@ -270,6 +274,7 @@ aplicaciones hay que hacer el enfoque en las plataformas de dispositivos
 móviles debido a su aceptación y uso universal.
 
 \Paragraph{Adopción de HTML5 y CSS3}
+\hfill\Source{ref:18-trends-in-app-dev}
 
 Desde hace unos años tiene lugar el dilema con que se enfrentan muchas empresas
 que ofrecen servicios en la Web tanto para los navegadores de PCs como para los
@@ -305,6 +310,57 @@ interes en promoción de HTML5 por parte de las grandes compañías como la
 tecnología para el desarrollo de las aplicaciones para dispositivos móviles.
 
 \Paragraph{Modelo asíncrono de ejecución en el servidor/cliente}
+\hfill\Source{ref:3-software-dev-trends}
+
+Con el aumento de trafico en Internet la carga a los servidores Web ha crecido
+mucho. Ha surgido la necesidad de incrementar el número de servidores para
+satisfacer la demanda creciente de clientes. El modelo de ejecución en los
+servidores tradicionales está basado en hilos. Cada petición requiere el acceso
+a subsistemas relativamente lentas tales como el sistema de ficheros, las
+bases de datos relacionales, el acceso a Web APIs de terceros. Estos acceso
+lentos bloquean hilos en el servidor Web consumiendo los recursos limitados del
+servidor. Cuando el número de peticiones y su frequencia es grande el modelo de
+ejecución síncrona no es aceptable porque no escala bien.
+
+Para resolver el problema de muchas peticiones concurrentes con el mínimo de
+recursos disponibles en los úlitmos años se ha aplicado el modelo asíncrono de
+ejecución en el servidor. El modelo asícrono de ejecución no bloquea la ejeción
+en el servidor Web mientras se espara la respuesta de sistema de ficheros o la
+respuesta de la bases de datos o la respuesta de Web API, sino que se crea una
+función que se va a llamar cuando la respuesta esté lista para su procesamiento
+posterior y el servidor Web sigue serviendo más peticiones.
+
+El modelo asícrono de ejecución ha sido la clave de éxito del servidor Web
+NGINX. Muchas empresas de todo tipo han podido reducir considerablemente sus
+granjas de servidores Web tradicionales sustituyendolos por servidores Web
+NGINX. El servidor Web NGINX está dominando el mercado de servidores Web. Otro
+ejemplo de modelo asíncrono de ejecución es el framework Node.js. Node.js es
+un entorno de entrada/salida asíncrono que utiliza JavaScript para implementar
+la funcionalidad de aplicaciones en la parte de servidor.
+
+En la parte de cliente el modelo asíncrono de ejecución dominaba desde su
+invento. JavaScript es el lenguage de programación de la Web. Con la
+introducción de Node.js en la parte de servidor JavaScript se ha convertido
+un un lenguage de programación universal de la Web tanto en la parte de cliente
+como en la parte de servidor. Las aplicaciones web más innovadores hoy en día
+son isomorficas. Las aplicaciones isomorficas se pueden ejecutar tanto en el
+servidor como en el cliente. Si la peticion al servidor Web se realiza desde un
+cliente con capacidades de procesamiento de JavaScript (por ejemplo un navegador
+Web) el servidor responde inmediatemente al cliente con la aplicación que se va
+a ejecutar en el cliente omitiendo la carga de ejecutar la aplicación en el
+servidor Web. Este tipo de aplicaciones se llaman aplicaciones SPA (Single Page
+Application). Si por el contrario el servidor recibe la peticion desde un
+cliente sin capacidad de procesamiento de JavaScript (por ejemplo un robot de
+una máquina de búsqueda) el servidor ejecuta la aplicación y responde al cliente
+con el HTML ya procesado. Este modelo de funcionamiento de servidor Web se llama
+SEO (Search Engine Optimization) y permite servir el contenido ya procesado a
+los clientes sin capacidad de procesamiento de JavaScript.
+
+El modelo asíncrono de ejecución es la evlución natural de proceso de
+interacción entre distintos agentes en Internet ya que resuelve los problemas de
+eficiencia y escalado y además es más cercado a la conversasión natural.
+JavaScript se ha convertido en un lenguage universal de la Web y su naturaleza
+asíncrona encaja perfectamente en el modelo asíncrono de ejecución.
 
 \subsection{Fuerzas competitivas básicas}%{Porter forces}
 
@@ -512,6 +568,72 @@ threats, eliminate weaknesses on threats
 
 \section{Situación de mercado}%{Market situation}
 
+Muchas veces las empresas compran el software que es demasiado complejo y
+costoso para la operativa y las necesidades que habitualmente suelen tener. El
+mercado de software está dividido en 5 segmentos principales. Los segmentos de
+mercado de software se distinguen por el nivel de complejidad y configuración de
+sofware, las opciones funcionales y las opciones de integración con otros
+sistemas. Mientras más complejo y más funcionalidad tiene el software más caro y
+más costoso es desplegar y configurarlo. Por el contrario en el otro lado de
+mercado se encuentras los segmentos con el software menos complejo con los
+paquetes preconfigurados que satisfacen las necesidades de típicas empresas de
+segmento. La funcionalidad y el número de usuarios son limitados lo cual se
+rejleja en el precio de software.
+
+\rightaligned{\Source{ref:software-market-overview}}
+\placefigure[here][fig:software-market]{Situación de mercado}
+  {\externalfigure[software-market-tier-chart.jpg][width=0.7\textwidth]}
+
+\Paragraph{Enterprise software}
+
+El software de este segmento de mercado es muy complejo y tiene muchas
+prestaciones porque pertime ajustarse a cualquier necesidad de las grandes
+empresas. El software es dificil de desplegar y configurar. Las empresas que
+utilizan el software de esta categoría pertenecen a Fortune 500. Son las
+empresas multinacionales con las estructuras matriciales. El software permite
+configuraciónes locales y regionales que aseguran el cumplimiento de las
+políticas vigentes en cada region. Sistemas de esta categoría ofrecen las
+interfaces de conexión a cualquier otro sistema. Los principales proveedores en
+este segmento de mercado son Oracle y SAP.
+
+\Paragraph{Upper market software}
+
+Los productos de este segmento de mercado son menos complejos en comaración con
+el anterior pero todavía son bastante dificiles para desplegar y configurar. El
+software es menos costoso. Las empresas que utilizan este software son muy
+grandes pero no llegan al tamaño y complejidad de procesos de las empresas del
+segmento anterior. Los principales proveedores en este segmento de mercado son
+Infor, Microsoft Dynamics AX y muchos otros.
+
+\Paragraph{Mid market software}
+
+En este segmento de mercado compiten muchos proveedores ya que el número de
+empresas que utilizan el software de esta categoría super el número de empresas
+en los dos anteriores segmentos de mercado. El software es versatil y ajustable
+a las necesidades diversas de las empresas pero la escala es menor en
+comparación con los dos primero segmentos de mercado. En este segmento de
+mercado se ofrecen los paquetes preconfigurados de fácil desplegue lo cual
+permite reducir los costes de software. Los principales proveedores en este
+segmento de mercado son Microsoft Dynamics NAV, Sage, Infor, SAP Business One.
+
+\Paragraph{Lower market software}
+
+Las empresas de este segmento de mercado han podido superar los límites del
+último segmento de mercado pero sus dimenciones y complejidad no llegan el la
+escala del segmento anterior. En este segmento de mercado se precisan las
+soluciones escalables con relativamente copa configuración y bajo precio. Los
+principales proveedores en este segmento de mercado son Sage MAS y Microsoft
+Dynamics GP.
+
+\Paragraph{Shrink wrap software market}
+
+El software de este segmento de mercado no permite mucha configuración y muchos
+usuarios en el sistem. Son versiones limitadas en su funcionalidad con el
+objetivo de reducir los costes. Los desplegues son fáciles y no permiten mucha
+flexibilidad a la hora de satisfacer las necesidades de las empresas. Sin
+embargo este software es lo que precisan las pequeñas empresas. Los principales
+proveedores de este segmento de mercado son Sage Simply Accouning e Intuit.
+
 \subsection{Tendencias de mercado}%{Market trends}
 
 \subsection{Perfil de cliente}%{Customer profile}
@@ -696,5 +818,27 @@ liabilities
 \section{Descripción de tecnología}%{Technology overview}
 
 \section{Especificación de producto}%{Product specification}
+
+\chapter{Referencias}%{References}
+
+\useURL[url:18-trends-in-app-dev]
+  [http://www.billchamberlin.com/top-18-trends-in-application-software-development-for-2014/][]
+  [Bill Chamberlin \endash\ Top 18 Trends in Application Software Development for 2014]
+\useURL[url:5-it-industry-trends]
+  [http://www.goabacus.com/index.php?page=5-growing-it-industry-trends-and-developments][]
+  [ABACUS IT \endash\ 5 Growing IT Industry Trends \& Developments]
+\useURL[url:3-software-dev-trends]
+  [http://www.cybercoders.com/insights/3-big-software-development-trends-to-watch-in-2014/][]
+  [Cyber Coders \endash\ 3 Big Software Development Trends to Watch in 2014]
+\useURL[url:software-market-overview]
+  [http://www.softresources.com/resource-room/software-market-overview/][]
+  [Soft Resources \endash\ Software Market Overview]
+
+\startitemize[n]
+\item[ref:18-trends-in-app-dev] \from[url:18-trends-in-app-dev]
+\item[ref:5-it-industry-trends] \from[url:5-it-industry-trends]
+\item[ref:3-software-dev-trends] \from[url:3-software-dev-trends]
+\item[ref:software-market-overview] \from[url:software-market-overview]
+\stopitemize
 
 \stoptext
