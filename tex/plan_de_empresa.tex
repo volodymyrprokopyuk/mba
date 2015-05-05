@@ -1056,7 +1056,7 @@ siguientes etapas:
 
 \startitemize
 \item Gestión de los clientes de la empresa
-\item Toma de requisitos de las soluciones a desarrollar
+\item Toma de requerimientos de las soluciones a desarrollar
 \item Diseño de la arquitectura de las soluciones a desarrollar
 \item Desarrollo de software
 \item Realización de los procesos de QA
@@ -1088,26 +1088,160 @@ procesos de negocio de los clientes.
 Para los clietens que han decidido contratar el desarrollo de las nuevas
 soluciones se realizan las reuniones donde se concretan las tareas a realizar,
 los roles de cada parte, los plazos de entrega de las soluciones, las formas de
-pago y otros detalles de los acuerdos contractuales.
+pago y otros detalles de los acuerdos contractuales. El resultado de la
+actividad de gestión de los clientes es el contrato entre el cliente y la
+empresa para el desarrollo de la solución con las caracterísiticas previamente
+acordadas.
 
-\Paragraph{Toma de requisitos de las soluciones a desarrollar}
+\Paragraph{Toma de requerimientos de las soluciones a desarrollar}
 
 La toma de requisitos de las soluciones a desarrollar es una actividad muy
 importante en el proceso de desarrollo de las soluciones porque determina todo
 la trayectoria del proyecto. Mientras mejor se puede endender lo que el cliente
 quiere y que problemas pretende resolver más satisfecho estará el cliente
 después de la entrega de la solución. Es muy importante entender el problema a
-resolver, las limitaciónes que tiene en entorno y las necesidades del cliente.
+resolver, las limitaciónes que tiene el entorno y las necesidades del cliente.
+La comprención profunda de los requerimiento permite anticipar las futuras
+evoluciones de la solución y anticipadamente preperar la arquitectura del
+sistema informático a desarrollar.
+
+El proceso de la toma de requisitos consiste en una o variar reuniones con el
+cliente donde el clieten explica los problemas que quiere resolver, sus
+necesidades, el entorno en que opera y las futuras aspiraciones para la
+solución a desarrollar. Por otro lado la empresa pregunta al cliente los
+casos de uso, los modos de operación, las espificaciones de lógica de
+funcionamiento y otros detalles de la solución a desarrollar. En unos casos la
+empresa puede sugerir las soluciones alternativas mejores u otras formas de
+resolver los problemas del clieten. El proceso de toma de requerimientos es un
+proceso iterativo. En las primeras reuniones se concreta la forma general y la
+funcionalidad principalde la solución a desarrollar. Después de haber entregado
+al cliente los primeros prototipos de la solución el cliente manifestará su
+opinión sobre el funcionamiento del sistema y la emprea realizará las
+corecciónes correspondientes en la solución. De esta manera el proceso de toma
+de los requerimientos es un proceso iterativo y permite refinar y pulir la
+solución durante las faces de desarrollo y de esta manera aportar más valor al
+cliente. La essencias del proceso de desarrollo iterativos consiste en dejar al
+cliete la libertad de continuamente mejorar la solución en base a la
+expreciencia adqurida durante las pruebas de los prototipos que se entragan
+periódicamente al cliente. El proceso de desarrollo iterativo es la ventaja que
+ofrece la empresa a sus clientes. El resultado de la actividad de toma de los
+requerimientos es un documento con todas las detalles de funcionamiento de la
+solución a desarrollar.
 
 \Paragraph{Diseño de la arquitectura de las soluciones a desarrollar}
 
+El diseño de la arquitectura de sofware es el proceso crucial que determina la
+calidad, la fiabilidad y la flexibilidad del futuro sistema. La arquitectura de
+software presenta la base de todo el sistema y las posibilidades de futuras
+extensiones. El proceso de diseño de la arquitectura de software requiere mucha
+experiencia y muchos conocimientos técnicos y de ingenieria de software.
+
+Las decisiones arquitectónicas tienen que tomarse a deferentes niveles del
+sistema a desarrollar. Primer nivel supone la definición de los actores del
+sistema y su alto nivel de interacción. En esta face se definen los componentes
+del sistema de alto nivel y los flujos de información entre ellos. El primer
+nivel de arquitectura describe las diferentes aplicaciones que forman el sistema
+indegrándose de forma natural. El segundo nivel prentende definir la estructura
+de cada uno de los componentes del sistema por separando. Este nivel define la
+estructura interna de las aplicaciones, las estructuras de datos, las
+estrucuturas de lógica de cada una de los componentes de la aplicación. El
+resultado del diseño de la arquitectura de software es el documento técnico que
+describe los componentes del futuro sistema y la estructura interna de cada uno
+de los componentes junto con los flujos de información entre los componentes.
+
 \Paragraph{Desarrollo de software}
+
+El desarrollo de software presemta la construcción de código funete de la
+solución a partir de la arquitectura previamente diseñada. Este proceso
+precisa muchas experiencia y muchos conocimientos técnicos. La idea general del
+proceso consiste en traducir la arquitectura de alto nivel en instrucciones que
+entiende el ordenador de manera que no haya sitio para errores, abiguedades o
+comportamientos indefinidos.
+
+Duarnte el proceso de desarrllo de software se aplican diferentes lenguates de
+programación. Cada componente del sistema precisa la aplciacion del lenguage más
+adecuado para la tarea en questión. Los componentes a desarrllar de dividen en
+una estructura jerárquica. Las estructuras jerárquicas constan la essencia de
+desarrollo de software porque es la abstracción más potente a la hora de
+resolver los problemas complejos. La estructura jerárquica permite devidir un
+problema complejo en varias problemas menos complejas que tienen la solución más
+simple. Esta tecnica se aplica tantas veces que sea necesario para convertir la
+solución de un problema complejo a la la solución de muchas problemas simples.
+Por otro lado la presetnación de la solución de un problema complejo en formara
+de una jerarquía de los problemas simples aumenta la cohesión entre los
+componentes, disminuye el acomplamiento entre los componentes y permite probar
+cada componente por separado. El resultado del procose de desarrollo de software
+es el código fuente de la socluión. Es la essencia de producto que ofrece la
+empresa.
 
 \Paragraph{Realización de los procesos de QA}
 
+Los procesos de QA (Quality Assurance) aseguran la calidad y la fiablidad del
+sistema. Los procesos de QA automatizan las pruebas y ofrecen la posibilidad de
+probar de forma automática todos los casos de uso acordados con el cliente. La
+ventaja de la autimatización de las puebas es que después de cada cambio en el
+sistema se puede lanzar la batería de pruebas y asegurar el correto
+fucionamiento del sistema.
+
+Hay varios tipos de los procesos de QA. El primer tipo se llama las pruebas
+unitarias y consiste en probar por separado cada unidad de funionalidad de
+sistema. Las puruebas unitarias permiten detecatar muchos errores de
+funcionamiento incorrecto de los componentes del sistema y de esta manera
+prevenir las horas de búsqueda de errors cuando el sistema ya está montado. Las
+pruebas unitarias se basan en los requerimientos y en el diseño de arquitectuar
+de bajo nivel. Las purebas unitarias aseguran que cada compomente del sistema
+funciona correctamente. El segundo tipo de las pruebas se llama las pruebas de
+integración. Las pruebas de integración verifican la funcionalidad de los
+bloques enteros de componentes subiendo la estrucutra jerárquica de los
+componentes. Las puebas de integración aseguran que los interfaces de contexión
+entre los componentes de bajo nivel funcionan correctamente y los componentes
+funcionan bein en su conjunto. Mientras que el proceso de desarrollo baja la
+estructura jerárquica de los componente de un sistema dividiendo los problemas
+complejos un unos más simples el proceso QA sube es estructura jerárquica de los
+componentes verificacndo la funcionaliad de los bloques integrados pos los
+componentes funcionales. El resultado de las actividades de QA es la solución
+probada y verificada lista para el despliegue.
+
 \Paragraph{Despliegue y configuración de las soluciones}
 
+El despliegie y la configuración de la solución son los procesos de puesta en
+marcha de la solución. Dependiendo de la infraestructura de hardware y la
+arquitectura de software de alto nivel las actividades de despliege pueden
+variar. En casos simples la solución precisa un servidor y todas las actividades
+de despliege tienen lugar en una sola máquina. En casos más complejos el
+despliege comprende varios servidores que dependen uno de otro.
+
+Para agilizar el proceso de despliege la empresa elabora los scripts de
+instalación y configuración. Los scripts de instalación y configuración son
+los programas que se ejecuante en el entrono de pordución y preparan la
+solución para su funcionamiento correcto en la producción. La configuración de
+las soluciones es crucial para el correcto funcionamiento de la solución. La
+configuración de la solución permite ajustar los parámetros de la solución a un
+entrono concreto y optimizar el servicio que se presta. El resultado de las
+actividades de despliege y configuración el el sistema funcionando correctamente
+en producción.
+
 \Paragraph{Mantenimient de las soluciones}
+
+El mantenimiento de las soluciones es la fase más larga en el ciclo de vida de
+la solución. Las tareas de mantenimiento comprenden la actualización de software
+con los parches se seguridad, administración de equipos y servidores,
+realización de las copias de seguridad, gestión de certificados digitales,
+monitorización de la carga de CPU y de la carga de memoria.
+
+Las tareas se mantenimiento de softaware tambien incluyes la implementación de
+los cambios y las modificaciones de la lógica de funcionamiento de las
+soluciones. Algunos cambios pequeños habitualmente no llevan coste pero los
+cambios grandes pueden incluso convertirse en otros proyectos saparados con
+todas las actividades que les corresponden. Es muy importante acordar con el
+cliente las fechas de puesta en producción de los cambios pedidos por un lado y
+asegurar que los cambios intoducidos no rompen la funcionalidad ateriormente
+implementada. Para tal fin sirven muy bien los procesos de QA. Las
+modificaciones de las soluciones suponen la ejecución de los procesos de
+despliege y configuración. En estos momentos son de mucha utilidad los scripts
+de despliege y configuración que automatizan los procesos y aseguran su
+ejecución correcta. Los procesos de mantenimiento casi siempre son una fuente de
+ingresos adicionales.
 
 \subsection{Marketing}%{Marketing}
 
