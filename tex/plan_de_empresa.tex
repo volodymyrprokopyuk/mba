@@ -2241,38 +2241,39 @@ principales de la empresa para emjorar el servicio al cliente.
 
 \section{Cuenta de resultados previsional}%{Income statement projection}
 
-\startlines
-{\bf Gross revenue}
-- Goods costs (direct costs)
-= {\bf Gross profit}
-- Operating expenses (indirect costs)
-- Depreciation expenses (amortización)
-= {\bf Operating profit}, EBIT (Earnings Before Interest and Taxes)
-+ Interest income
-- Interest expenses
-= {\bf Profit before taxes}
-- Taxes (impuestos)
-= {\bf Net profit} (over a period)
-\stoplines
-
 \placetable[here][tab:cuenta-resultados]
-{Cuenta de resultados previsional}
+{Cuenta de resultados previsional}%{Income statement projection}
 {\starttable[|l|r|]
 \HL
-\NC \bf Ingresos (ventas) \NC \hfill\bf 50 400 euros \NC\MR
+\NC \bf Ingresos por ventas% Gross revenue (from Sales program)
+  \NC \bf 50 400 euros \NC\MR
 \HL
-\NC Gastos variables \NC \hfill - XXX euros \NC\MR
-\NC \bf Margen bruto \NC \hfill\bf = XXX euros \NC\MR
+\NC Gastos variables% Goods costs
+  \NC \NC\MR
+\NC \hspace[big] Electricidad (12 meses por 20 euros) \NC - 240 euros \NC\MR
+\NC \bf Margen bruto% Gross profit
+  \NC \bf = 50 160 euros \NC\MR
 \HL
-\NC Gastos fijos \NC \hfill - XXX euros \NC\MR
-\NC Amortizaciones \NC \hfill - XXX euros \NC\MR
-\NC \bf Beneficio antes de intereses e impuestos, BAII \NC \hfill\bf = XXX euros \NC\MR
+\NC Gastos fijos% Operating expenses
+  \NC \NC\MR
+\NC \hspace[big] Internet (12 meses por 35 euros) \NC - 420 euros \NC\MR
+\NC Amortizaciones% Depreciation expenses
+  \NC \NC\MR
+\NC \hspace[big] Portátil (12 meses por 10 euros) \NC - 120 euros \NC\MR
+\NC \bf Beneficio antes de intereses e impuestos, BAII
+  % Operating profit, EBIT
+  \NC \bf = 49 620 euros \NC\MR
 \HL
-\NC Intereses \NC \hfill - XXX euros \NC\MR
-\NC \bf Beneficio antes de impuestos, BAI \NC \hfill\bf = XXX euros \NC\MR
+\NC Intereses% Interest income/expenses
+  \NC - 0 euros \NC\MR
+\NC \bf Beneficio antes de impuestos, BAI
+  % Profit before taxes
+  \NC \bf = 49 620 euros \NC\MR
 \HL
-\NC Impuestos \NC \hfill - XXX euros \NC\MR
-\NC \bf Beneficio neto \NC \hfill\bf = XXX euros \NC\MR
+\NC Impuestos (25\%)% Taxes
+  \NC - 12 405 euros \NC\MR
+\NC \bf Beneficio neto% Net profit
+  \NC \bf = 37 215 euros \NC\MR
 \HL
 \stoptable}
 
@@ -2309,6 +2310,39 @@ principales de la empresa para emjorar el servicio al cliente.
 liabilities
 \stopitemize
 
+\placetable[here][tab:balance-situacion]
+{Balance de situación previsional}%{Balance sheet projection}
+{\starttable[|lw(0.5\textwidth)|r|]
+\HL
+\NC \use{2}{\hfill\bf Activos\hfill} \NC\MR% Assets
+\HL
+\NC \use{2}{\bf Activos no corrientes\hfill} \NC\MR% Fixed assets
+\NC \hspace[big] Capital social (mi aportación) \NC 3 000 euros \NC\MR
+\NC \hspace[big] Portátil \NC 700 euros \NC\MR
+\NC \bf Total activos no corrientes: \NC \bf 3 700 euros \NC\MR
+\NC \use{2}{\bf Activos corrientes\hfill} \NC\MR% Current assets
+\NC \hspace[big] Clientes \NC 50 400 euros \NC\MR% from Sales program
+\NC \bf Total activos corrientes: \NC \bf 50 400 euros \NC\MR
+\NC \bf Total activos: \NC \bf 54 100 euros \NC\MR
+\NC \use{2}{\hfill\bf Pasivos\hfill} \NC\MR% Liabilities
+\HL
+\NC \use{2}{\bf Pasivos no corrientes\hfill} \NC\MR% Current liabilities
+\NC \bf Total pasivos no corrientes: \NC \bf - 0 euros \NC\MR
+\NC \use{2}{\bf Pasivos corrientes\hfill} \NC\MR% Long-term liabilities
+\NC \hspace[big] Electricidad \NC - 240 euros \NC\MR
+\NC \hspace[big] Internet \NC - 420 euros \NC\MR
+\NC \hspace[big] Amortizaciones (portátil) \NC - 120 euros \NC\MR
+\NC \hspace[big] Impuestos \NC - 12 405 euros \NC\MR
+\NC \bf Total pasivos corrientes: \NC \bf - 13 185 euros \NC\MR
+\NC \bf Total pasivos: \NC \bf - 13 185 euros \NC\MR
+\NC \use{2}{\hfill\bf Patrimonio neto\hfill} \NC\MR% Equity
+\HL
+\NC \hspace[big] Capital \NC 3 700 euros \NC\MR
+\NC \hspace[big] Reservas \NC 37 215 euros \NC\MR
+\NC \bf Total partimonio neto: \NC \bf 40 915 euros \NC\MR
+\HL
+\stoptable}
+
 \section{Estado de flujos de tesoreria previsional}
 %{Cash-flow statement projection}
 
@@ -2336,9 +2370,44 @@ liabilities
 \item Operation + investing + financing = net cash flow (over a period)
 \stopitemize
 
+\placetable[here][tab:flujos-tesoreria]
+{Estado de flujos de tesoreria previsional}%{Cash-flow statement projection}
+{\starttable[|l|r|]
+\HL
+\NC \bf Saldo inicial \NC \bf 0 euros \NC\MR
+\HL
+\NC \use{2}{\bf Actividades ordinarias\hfill} \NC\MR% Operations
+\NC Cobros \NC \NC\MR
+\NC \hspace[big] Clientes \NC 50 400 euros \NC\MR% from Sales program
+\NC Pagos \NC \NC\MR
+\NC \hspace[big] Electricidad \NC - 240 euros \NC\MR
+\NC \hspace[big] Internet \NC - 420 euros \NC\MR
+\NC \hspace[big] Impuestos \NC - 12 405 euros \NC\MR
+\NC \bf Saldo actividades ordinarias \NC \bf 37 335 euros \NC\MR
+\HL
+\NC \use{2}{\bf Actividades de inversión\hfill} \NC\MR% Investment activity
+\NC \bf Saldo actividades de inversión \NC \bf 0 euros \NC\MR
+\HL
+\NC \use{2}{\bf Actividades de financiación\hfill} \NC\MR% Financing activity
+\NC \bf Saldo actividades de financiación \NC \bf 0 euros \NC\MR
+\HL
+\NC \bf Saldo final \NC \bf 37 335 euros \NC\MR
+\HL
+\stoptable}
+
 \section{Presupuesto}%{Master budget}
 
 \Comment{Future}
+
+\placetable[here][tab:presupuesto]
+{Presupuesto}
+{\starttable[|l|r|]
+\HL
+\NC Electricidad \NC 240 euros \NC\MR
+\NC Internet \NC 420 euros \NC\MR
+\NC \bf Total presupuesto \NC \bf 660 euros \NC\MR
+\HL
+\stoptable}
 
 \chapter{Plan de acción}%{Action plan}
 
