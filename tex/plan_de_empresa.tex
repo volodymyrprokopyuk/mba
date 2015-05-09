@@ -1,15 +1,5 @@
 \environment layout
 
-% - business environment (industry, customers, competition)
-%   - company overview (mission, vision, values, goals, objectives)
-%     - company strategy (SWOT, business model, growth strategy)
-%       - company description (products, business capabilities)
-%       - marketing plan
-%       - financial review
-%       - action plan
-%       - contingency plan
-%       - executive summary
-
 %\usemodule[fnt-10]
 %\ShowCompleteFont{name:fontawesome}{20pt}{1}
 
@@ -1779,37 +1769,6 @@ precios reucidos en los plazos de entrega cortos. Toda la dirección estrategica
 de la empresa va es ser dirigida dentro del marco de la innovación y la mejora
 contínua.
 
-\section{Análisis de punto de equilibrio}%{Break-even analysis}
-
-\startformula
-IT = CT
-\stopformula
-\startformula
-PU \cdot US = CFT + CVU \cdot US
-\stopformula
-\startformula
-US \cdot (PU - CVU) = CFT
-\stopformula
-\startformula
-US = \frac{CFT}{PU - CVU}
-\stopformula
-\startlegend
-\leg IT \\ Ingresos Totales \\ euros/mes \\
-\leg CT \\ Costes Totales \\ euros/mes \\
-\leg PU \\ Precio Unitario \\ euros/unidad \\
-\leg US \\ Unidades vendidos \\ unidad \\
-\leg CFT \\ Costes Fijos Totales \\ euros/mes \\
-\leg CVU \\ Costes Variables Unitarios \\ euros/unidad \\
-\stoplegend
-\startfact
-\fact Costes Fijos Totales \\ CFT \\ 35~euros/mes \\
-\fact Precio Unitario \\ PU \\ 1000~euros/semana \\
-\fact Costes Variables Unitarios \\ CVU \\ 5~euros/semana \\
-\stopfact
-\startformula
-US = \frac{CFT}{PU - CVU} = \frac{35}{1000 - 5}~\cdot~5~días/sem~\cdot~8~horas/día \approx 1.5~horas/semana
-\stopformula
-
 \chapter{Plan de marketing}%{Marketing plan}
 
 \section{Situación de mercado}%{Market situation}
@@ -2272,10 +2231,10 @@ principales de la empresa para emjorar el servicio al cliente.
 
 \section{Cuenta de resultados previsional}%{Income statement projection}
 
-\startitemize
-\item Análisis económico
-\item Ingresos - gastos en un período
-\stopitemize
+\Comment{Ingresos, gastos y beneficios en un período (1 año)}
+
+La cuenta de resultados previsional de la empresa para 1 año se presenta en
+la \in{tabla}[tab:cuenta-resultados].
 
 \placetable[here][tab:cuenta-resultados]
 {Cuenta de resultados previsional}%{Income statement projection}
@@ -2300,7 +2259,7 @@ principales de la empresa para emjorar el servicio al cliente.
   % Operating profit, EBIT
   \NC \bf = 49 620 euros \NC\MR
 \HL
-\NC Intereses% Interest income/expenses
+\NC Intereses (no hay financiación)% Interest income/expenses
   \NC - 0 euros \NC\MR
 \NC \bf Beneficio antes de impuestos, BAI
   % Profit before taxes
@@ -2313,45 +2272,89 @@ principales de la empresa para emjorar el servicio al cliente.
 \HL
 \stoptable}
 
+Los ingresos vienen por las ventas de las soluciones IT, los servicios de
+consultoria IT y los servicios de mantenimiento de las soluciones IT. Los gastos
+variables de desarrollo de software es la electricidad. Los gastos fijos son las
+comunicaciones e Internet. Las aporticaciones vienen de la compra del portátil
+para el desarrollo y la gestión de la empresa. El precio del portátil es de
+700~euros y la vida útil del portatil es de 7 años. Para calcualr las cuatas de
+amortización del portátil se aplica el método lineal de amortización con lo cual
+la cuota anual de amortización del portátil es de 100~euros/año y la cuota
+mensual de amortización del portátil es de aproximadamente 10~euros/mes. No hay
+intereses porque no es necesario ningún tipo de financiación para desarrollar
+las actividades de la empresa. Los impuestos son 25\% de los beneficios antes de
+impuestos porque le empresa pertenece al tipo de empresas pqueñas.
+
+\section{Análisis económico previsional}%{Economic analysis}
+
+\Paragraph{Punto de equilibrio (umbral de rentabilidad)}%{Break-even analysis}
+
+\Comment{Volumen de ventas para cubrir los gastos\crlf
+cuando el beneficio es cero}
+
+El análisis de punto de equilibrio permite calcular el volumen de ventas
+necesario para cubrir los gastos cuando el beneficio es cero. Se parte de que
+los ingresos totales \m{IT} son iguales a los costes totales \m{CT}. Los
+ingresos totales se presentan como el producto del precio unitario \m{PU} y la
+cantidad de las unidades vendida \m{US}. \m{IT = PU \cdot US}. Los costes
+totales se prsentan como los costes fijos totales \m{CFT} más el producto de los
+costes variables unitarios \m{CVU} y la cantidad de las unidades vendidas.
+\m{CT = CFT + CVU \cdot US}. La cantidad de las unidades vendidas se presenta a
+continuación:
+
+\startformula
+IT = CT
+\stopformula
+\startformula
+PU \cdot US = CFT + CVU \cdot US
+\stopformula
+\startformula
+US \cdot (PU - CVU) = CFT
+\stopformula
+\startformula
+US = \frac{CFT}{PU - CVU}
+\stopformula
+donde
+\startlegend
+\leg IT \\ Ingresos Totales \\ euros/mes \\
+\leg CT \\ Costes Totales \\ euros/mes \\
+\leg PU \\ Precio Unitario \\ euros/unidad \\
+\leg US \\ Unidades vendidos \\ unidad \\
+\leg CFT \\ Costes Fijos Totales \\ euros/mes \\
+\leg CVU \\ Costes Variables Unitarios \\ euros/unidad \\
+\stoplegend
+Los costes fijos totales son los costes de las comunicaicones e Internet. El
+precio unitario es el precio de una solución IT de 1~semana de duración. Los
+costes variables unitarios son los costes de electricidad 20~euros/mes y
+5~euros/semana.
+\startfact
+\fact Costes Fijos Totales \\ CFT \\ 35~euros/mes \\
+\fact Precio Unitario \\ PU \\ 1000~euros/semana \\
+\fact Costes Variables Unitarios \\ CVU \\ 5~euros/semana \\
+\stopfact
+La cantidad de las unidades vendidas que en este caso es la cantidad de
+soluciones IT de 1~semana de duración vendidas es:
+\startformula
+US = \frac{CFT}{PU - CVU} = \frac{35}{1000 - 5} \approx 0.035
+\stopformula
+Convertimos el resultado a las horas a la semana necesarias para cubrir los
+gastos:
+\startformula
+0.035~\cdot~5~días/sem~\cdot~8~horas/día \approx 1.5~horas/semana
+\stopformula
+El punto de equilibrio para la empresa es vender por lo menos 1.5~horas de
+solucioens IT por la semana. Como se puede ver los gastos de la empresa son muy
+pequeños lo cual significa que la empresa es muy rentable y la actividad de
+empresa no supone un riesgo grande para llevarla al cabo.
+
+\page[yes]
 \section{Balance de situación previsional}%{Balance sheet projection}
 
-\Comment{Accrual basis accounting, own/owe}
+\Comment{Contabilidad accural (activos, pasivos y patrimonio)\crlf
+Situación partimonial en un momento (al final del año)}
 
-\startlines
-{\bf Assets} (activos, all)
-\hspace[medium]Current assets (liquidity within a year, {\it liquidity} indicator)
-\hspace[big] Cash
-\hspace[big]Investment portfolio
-\hspace[big]Accounts receivable
-\hspace[big]Inventories
-\hspace[big]Prepaid expenses
-\hspace[medium]Fixed assets (liquidity more then a year)
-\hspace[big]Buildings
-\hspace[big]Equipment
-\hspace[big]Accumulated depreciation (value loss over years)
-\hspace[medium]Intangibles (Licences, patents, goodwill)
-= {\bf Liabilities} (pasivos, owe, financial instruments)
-\hspace[medium]Current liabilities (payable within a year)
-\hspace[big]Accounts payable
-\hspace[big]Accrued expenses payable
-\hspace[medium]Long-term liabilities (payable more then a year)
-\hspace[big]
-+ {\bf Equity} (patrimonio neto, own, {\it solvency} indicator) (in a moment)
-\hspace[medium]Invested capital (capital social, investors)
-\hspace[medium]Accumulated retained earnings = Net profit - dividends
-\stoplines
-
-\startitemize
-\item Working capital (fondo de maniobra) = Current assets - Current
-liabilities
-\stopitemize
-
-\startitemize
-\item Análisis patrimonial y financiero
-\item Situación partimonial en un momento
-\item Exigibilidad \endash\ proximidad de vencimiento de deuda (pasivos)
-\item Liquidez \endash\ proximidad de conversión en dinero (activos)
-\stopitemize
+El balance de situación previsional de la empresa para al fin del primer año se
+presenta el la \in{tabla}[tab:balance-situacion].
 
 \placetable[here][tab:balance-situacion]
 {Balance de situación previsional}%{Balance sheet projection}
@@ -2361,10 +2364,11 @@ liabilities
 \HL
 \NC \use{2}{\bf Activos no corrientes\hfill} \NC\MR% Fixed assets
 \NC \hspace[big] Capital social (mi aportación) \NC 3 000 euros \NC\MR
-\NC \hspace[big] Portátil \NC 700 euros \NC\MR
+\NC \hspace[big] Portátil (precio de adqusición) \NC 700 euros \NC\MR
 \NC \bf Total activos no corrientes: \NC \bf 3 700 euros \NC\MR
 \NC \use{2}{\bf Activos corrientes\hfill} \NC\MR% Current assets
-\NC \hspace[big] Clientes \NC 50 400 euros \NC\MR% from Sales program
+\NC \hspace[big] Clientes (venta de soluciones IT) \NC 50 400 euros \NC\MR
+% from Sales program
 \NC \bf Total activos corrientes: \NC \bf 50 400 euros \NC\MR
 \NC \bf Total activos: \NC \bf 54 100 euros \NC\MR
 \NC \use{2}{\hfill\bf Pasivos\hfill} \NC\MR% Liabilities
@@ -2372,51 +2376,60 @@ liabilities
 \NC \use{2}{\bf Pasivos no corrientes\hfill} \NC\MR% Current liabilities
 \NC \bf Total pasivos no corrientes: \NC \bf - 0 euros \NC\MR
 \NC \use{2}{\bf Pasivos corrientes\hfill} \NC\MR% Long-term liabilities
-\NC \hspace[big] Electricidad \NC - 240 euros \NC\MR
-\NC \hspace[big] Internet \NC - 420 euros \NC\MR
+\NC \hspace[big] Electricidad (12 meses por 20 euros) \NC - 240 euros \NC\MR
+\NC \hspace[big] Internet (12 meses por 35 euros) \NC - 420 euros \NC\MR
 \NC \hspace[big] Amortizaciones (portátil) \NC - 120 euros \NC\MR
-\NC \hspace[big] Impuestos \NC - 12 405 euros \NC\MR
+\NC \hspace[big] Impuestos (25\%) \NC - 12 405 euros \NC\MR
 \NC \bf Total pasivos corrientes: \NC \bf - 13 185 euros \NC\MR
 \NC \bf Total pasivos: \NC \bf - 13 185 euros \NC\MR
 \NC \use{2}{\hfill\bf Patrimonio neto\hfill} \NC\MR% Equity
 \HL
-\NC \hspace[big] Capital \NC 3 700 euros \NC\MR
-\NC \hspace[big] Reservas \NC 37 215 euros \NC\MR
+\NC \hspace[big] Capital (mi aportación) \NC 3 700 euros \NC\MR
+\NC \hspace[big] Reservas (beneficios no distribuidos) \NC 37 215 euros \NC\MR
 \NC \bf Total partimonio neto: \NC \bf 40 915 euros \NC\MR
 \HL
 \stoptable}
 
+Los activos no corrientes se forman por el capital social y el portátil para el
+desarrollo y la gestión de la empresa. El capital social de 3~000~euros es
+aportado por mí y necesario por la ley para emprender la actividad empresarial.
+El valor de adquisición de portátil es de 700~euros. La empresa no dispone de
+edificios y no asquila los locales porque toda la actividad de empresa se
+desarrolla desde el piso que está en mi propiedad. La empresa no tiene los
+pasivos no corrientes porque la empresa no cuenta con ningún prestamo a largo
+plazo. Los pasivos correntes se forman por la electricidad, las comunicaciones e
+Internet, las amortización del portátil y los impuestos. El patrimonio neto se
+desglosa en el capital que es mi aprotación para crear la empresa más el precio
+de adquisición del portátil y las reservas que son los beneficios no
+distribuidos. El patrimonio neto al final del primer año de actividad de la
+empresa es bastante alto lo cual significa que la solvencia (a largo plazo) de
+la empresa es muy buena.
+
+\section{Análisis patrimonial y financiero previsional}%{Financial analysis}
+
+\Paragraph{Fondo de maniobra}%{Working capital}
+
+\Paragraph{Ratio de liquidez}%{Liquidity ratio}
+
+\Paragraph{Ratio de endeudamiento}%{Leverage ratio}
+
+\section{Análisis de rentabilidad}%{Profitability analysis}
+
+\Paragraph{Rentabilidad económica (rendimiento de activos)}
+%{Economic profitability}
+
+\Paragraph{Rentabilidad financiera (rentabilidad)}%{Financial profitability}
+
+\page[yes]
 \section{Estado de flujos de tesoreria previsional}
 %{Cash-flow statement projection}
 
-\Comment{cash basis accounting, collect/spend, not a second before}
+\Comment{Contabilidad de efectivo en un período\crlf
+Cobros y pagos tan pronto como se producen\crlf
+ni un segundo antes}
 
-\startlines
-{\bf Total funds in} (inflow, cobros, after paid)
-\hspace[medium]Receipts on sales
-\hspace[medium]Interest income
-\hspace[medium]Invested capital
-- {\bf Total funds out} (outflow, pagos, after paid)
-\hspace[medium]Cost of goods acquired
-\hspace[medium]Overhead expenses
-\hspace[medium]Interest expenses
-\hspace[medium]Taxes
-\hspace[medium]Buildings and equipment
-\hspace[medium]Long-term debt reduction
-\hspace[medium]Dividends
-= {\bf Net change in cash position (external)/changes in liquid assets (internal)} (over a period)
-\hspace[medium]Cash
-\hspace[medium]Investment portfolio
-\stoplines
-
-\startitemize
-\item Operation + investing + financing = net cash flow (over a period)
-\stopitemize
-
-\startitemize
-\item Capacidad de la emrepsa de generar la riqueza
-\item Salto positivo \endash\ autofinanciación
-\stopitemize
+El stado de flujos de tesoreria previsional para la empresa se presenta en la
+\in{tabla}[tab:flujos-tesoreria].
 
 \placetable[here][tab:flujos-tesoreria]
 {Estado de flujos de tesoreria previsional}%{Cash-flow statement projection}
@@ -2426,11 +2439,12 @@ liabilities
 \HL
 \NC \use{2}{\bf Actividades ordinarias\hfill} \NC\MR% Operations
 \NC Cobros \NC \NC\MR
-\NC \hspace[big] Clientes \NC 50 400 euros \NC\MR% from Sales program
+\NC \hspace[big] Clientes (venta de soluciones IT) \NC 50 400 euros \NC\MR
+% from Sales program
 \NC Pagos \NC \NC\MR
-\NC \hspace[big] Electricidad \NC - 240 euros \NC\MR
-\NC \hspace[big] Internet \NC - 420 euros \NC\MR
-\NC \hspace[big] Impuestos \NC - 12 405 euros \NC\MR
+\NC \hspace[big] Electricidad (12 meses por 20 eruos) \NC - 240 euros \NC\MR
+\NC \hspace[big] Internet (12 meses por 35 euros) \NC - 420 euros \NC\MR
+\NC \hspace[big] Impuestos (25\%) \NC - 12 405 euros \NC\MR
 \NC \bf Saldo actividades ordinarias \NC \bf 37 335 euros \NC\MR
 \HL
 \NC \use{2}{\bf Actividades de inversión\hfill} \NC\MR% Investment activity
@@ -2443,9 +2457,26 @@ liabilities
 \HL
 \stoptable}
 
+En la empresa las diferencias entre el saldo inicial y el saldo final viene dado
+solo pos las actividades ordinarias. Los cobros de las actividades ordinarias
+constan las ventas de las soluciones IT, los servicios de consultoria IT y el
+mantenimiento de las solucioens IT. Los pagos de las actividades ordinarias se
+forman por la electricidad, las comunicaciones e Internet y los impuestos. La
+empresa no tiene ni las actividades de inversión y las actividade de
+financiación por la actividad de la empresa en el primer año no precisa las
+inversiones grandes y respectivamente la financiación. No obstante para
+asegurar el crecimiento de la empresa en el futuro se harán las inversiones en
+las direcciones potenciales de crecimiento de la empresa con su financiación
+correspondiente ya sea la autofinanciación u otros instrumentos financieros.
+El saldo final al final del primer año demuestra que la capacidad de la emrepsa
+de generar la riqueza es bastante alta lo cual es buen argumento para emprender
+el negocio.
+
 \section{Presupuesto}%{Master budget}
 
-\Comment{Future}
+\Comment{Estimaciones futuras de gastos de la empresa}
+
+El presupuesto de la empresa se presenta en la \in{tabla}[tab:presupuesto].
 
 \placetable[here][tab:presupuesto]
 {Presupuesto}
@@ -2656,19 +2687,8 @@ servicios de consultoria IT
   \NC 30/04/2016 \NC Yo \NC\MR
 \stoptable}
 
-\chapter{Plan de contingencia}%{Contingency plan}
-
-\Comment{What if ...?}
-
-\stopbodymatter
-
-\chapter{Apendices}%{Appendices}
-
-\section{Análisis de mercado}%{Market analysis}
-
-\section{Descripción de tecnología}%{Technology overview}
-
-\section{Especificación de producto}%{Product specification}
+%\chapter{Plan de contingencia}%{Contingency plan}
+%\Comment{What if ...?}
 
 \chapter{Referencias}%{References}
 
@@ -2692,4 +2712,5 @@ servicios de consultoria IT
 \item[ref:software-market-overview] \from[url:software-market-overview]
 \stopitemize
 
+\stopbodymatter
 \stoptext

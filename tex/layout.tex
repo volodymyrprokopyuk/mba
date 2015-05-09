@@ -62,12 +62,12 @@
 \setupexternalfigures[directory={../tex/img}]
 
 %% Comment
-\define[1]\Comment{{\darkgray #1}}
+\define[1]\Comment{\startalignment[flushright]\darkgray #1\stopalignment}
 
 %% Paragraph
-\define[1]\Paragraph{{\bf\darkgray #1}}
+\define[1]\Paragraph{{\bf\darkgray #1\page[no]}}
 
 %% Source
-\define[1]\Source{Fuente: {[}\in{}[#1]{]}}
+\define[1]\Source{{\darkgray Fuente: {[}\in{}[#1]{]}}}
 
 \stopenvironment
