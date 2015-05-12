@@ -70,6 +70,14 @@
 %% images
 \setupexternalfigures[directory={../tex/img}]
 
+%% flow charts
+\usemodule[chart]
+\setupFLOWcharts[maxwidth=\textwidth,dx=2\bodyfontsize,
+  maxheight=\textheight,dy=2\bodyfontsize]
+\setupFLOWshapes[rulethickness=2pt,
+  framecolor=Base,background=color,backgroundcolor=Lighter]
+\setupFLOWlines[rulethickness=4pt,color=Base]
+
 %% Comment
 \define[1]\Comment{\startalignment[flushright]\Gray #1\stopalignment\page[no]}
 

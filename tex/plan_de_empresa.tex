@@ -149,6 +149,40 @@ empresa.
 
 \Comment{Quiénes somos, qué hacemos}
 
+\setupFLOWcharts[width=20\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:mision]
+\startFLOWcell
+  \name{flow}
+  \location{1,1}
+  \text{Flow Volodymyr Prokopyuk Vorokhta and Svitlana}
+  \shape{5}
+  \connection[rl]{chart}
+\stopFLOWcell
+\startFLOWcell
+  \name{chart}
+  \location{2,1}
+  \text{Chart}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:mision]
+
+\setupFLOWcharts[width=10\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:mision]
+\startFLOWcell
+  \name{flow}
+  \location{1,1}
+  \text{\bf\Base Flow Volodymyr Prokopyuk Vorokhta and Svitlana}
+  \shape{5}
+  \connection[rl]{chart}
+\stopFLOWcell
+\startFLOWcell
+  \name{chart}
+  \location{2,1}
+  \text{Chart}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:mision]
+
 \Paragraph{Innovación constante en soluciones IT personalizadas de calidad y IT
 consultoría}
 
