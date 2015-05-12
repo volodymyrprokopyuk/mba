@@ -3,16 +3,25 @@
 %% language
 \mainlanguage[es]
 
+%% colors
+\setupcolor[hex]
+\definecolor[Base][h=184be5]
+\definecolor[Light][h=4e74e5]
+\definecolor[Lighter][h=91a8eb]
+\definecolor[Dark][h=0732b4]
+\definecolor[Darker][h=052278]
+\definecolor[Gray][h=888888]
+
 %% symbols
 \definefontsynonym[Awesome][name:fontawesome]
 \definesymbol[AwItem][\getnamedglyphdirect{Awesome}{ok}]
-\define\AwItem{\symbol[AwItem]}
+\define\AwItem{{\Gray\symbol[AwItem]}}
 \definesymbol[AwRArrow][\getnamedglyphdirect{Awesome}{arrow_right}]
-\define\AwRArrow{\symbol[AwRArrow]}
+\define\AwRArrow{{\Gray\symbol[AwRArrow]}}
 \definesymbol[AwRArrowLong][\getnamedglyphdirect{Awesome}{long_arrow_right}]
-\define\AwRArrowLong{\symbol[AwRArrowLong]}
+\define\AwRArrowLong{{\Gray\symbol[AwRArrowLong]}}
 \definesymbol[AwCaretRight][\getnamedglyphdirect{Awesome}{caret_right}]
-\define\AwCaretRight{\symbol[AwCaretRight]}
+\define\AwCaretRight{{\Gray\symbol[AwCaretRight]}}
 
 %% SourcePro font
 \starttypescript[sans][SourcePro]
@@ -38,21 +47,21 @@
 \setuppagenumbering[location=]
 \stopsectionblockenvironment
 \setuppagenumbering[location={footer,right}]
-\setupheadertexts[{\hfill\darkgray\getmarking[chapter]}]
+\setupheadertexts[{\hfill\Gray\getmarking[chapter]}]
 
 %% headings
-\setuphead[chapter][number=no,style=\bfc\darkgray]
-\setuphead[section][style=\bfb\darkgray]
-\setuphead[subsection][style=\bfa\darkgray]
+\setuphead[chapter][number=no,style=\bfc\Gray]
+\setuphead[section][style=\bfb\Gray]
+\setuphead[subsection][style=\bfa\Gray]
 \setupcaptions[minwidth=0.8\textwidth,location={bottom},align=middle,
-  headstyle=\tf,style=\bf]
+  headstyle=\tf,style=\bf,color=Gray]
 
 %% lists
-\definesymbol[1][{\darkgray\AwItem}]
-\definesymbol[2][{\darkgray\AwCaretRight}]
+\definesymbol[1][{\AwItem}]
+\definesymbol[2][{\AwCaretRight}]
 
 %% interaction
-\setupinteraction[state=start,style=normal]
+\setupinteraction[state=start,style=normal,color=Base]
 
 %% table of contents
 \setupcombinedlist[content][alternative=c]
@@ -62,12 +71,12 @@
 \setupexternalfigures[directory={../tex/img}]
 
 %% Comment
-\define[1]\Comment{\startalignment[flushright]\darkgray #1\stopalignment\page[no]}
+\define[1]\Comment{\startalignment[flushright]\Gray #1\stopalignment\page[no]}
 
 %% Paragraph
-\define[1]\Paragraph{{\bf\darkgray #1}\page[no]}
+\define[1]\Paragraph{{\bf\Gray #1}\page[no]}
 
 %% Source
-\define[1]\Source{\rightaligned{\darkgray Fuente: {[}\in{}[#1]{]}}\page[no]}
+\define[1]\Source{\rightaligned{\Gray Fuente: {[}\in{}[#1]{]}}\page[no]}
 
 \stopenvironment
