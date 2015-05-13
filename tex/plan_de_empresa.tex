@@ -8,8 +8,8 @@
 \startfrontmatter
 
 \midaligned{Escuela de Administración de Empresas}\blank[14*big]
-\midaligned{Plan de empresa}\blank[2*big]
-\midaligned{Volodymyr Prokopyuk}
+\midaligned{\bfc Plan de empresa}\blank[2*big]
+\midaligned{\tfb Volodymyr Prokopyuk}
 \midaligned{volodymyrprokopyuk@gmail}
 \vfill\midaligned{Madrid}
 \midaligned{\currentdate}
@@ -136,8 +136,30 @@ innovación y la tecnología.
 
 \section{Idea de negocio}%{Business idea}%{Business model summary}
 
+\midaligned{
+\setupFLOWcharts[width=9\bodyfontsize,height=7\bodyfontsize]
+\startFLOWchart[chart:idea-negocio]
+\startFLOWcell
+  \name{servicios-it}
+  \location{1,1}
+  \text{\bf\Base Empresa de servicios IT para el negocio de los clientes}
+\stopFLOWcell
+\startFLOWcell
+  \name{soluciones-it}
+  \location{2,1}
+  \text{\bf\Base Desarrollo y venta de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{consultoria-it}
+  \location{3,1}
+  \text{\bf\Base Servicios de consultoría IT}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:idea-negocio]}
+
 La idea de negocio consiste en vender las soluciones IT de calidad
 personalizadas a los clientes y prestar los servicios de consultoría IT a los
+clientes. El negocio es una empresa de servicios IT para el negocio de los
 clientes. Los ingresos principales son de las ventas de las soluciones IT y de
 los servicios de consultoría IT. Los gastos comprenden el coste de hora de
 diseño y de desarrollo de software, los gastos de electricidad y los gastos de
@@ -149,42 +171,20 @@ empresa.
 
 \Comment{Quiénes somos, qué hacemos}
 
-\setupFLOWcharts[width=20\bodyfontsize,height=4\bodyfontsize]
+\midaligned{
+\setupFLOWcharts[width=31\bodyfontsize,height=4\bodyfontsize]
 \startFLOWchart[chart:mision]
 \startFLOWcell
-  \name{flow}
+  \name{mision}
   \location{1,1}
-  \text{Flow Volodymyr Prokopyuk Vorokhta and Svitlana}
-  \shape{5}
-  \connection[rl]{chart}
-\stopFLOWcell
-\startFLOWcell
-  \name{chart}
-  \location{2,1}
-  \text{Chart}
+  \text{\bf\Base Innovación constante en las soluciones IT de calidad
+  personalizadas y en los servicios de consultoría IT}
 \stopFLOWcell
 \stopFLOWchart
-\FLOWchart[chart:mision]
+\FLOWchart[chart:mision]}
 
-\setupFLOWcharts[width=10\bodyfontsize,height=4\bodyfontsize]
-\startFLOWchart[chart:mision]
-\startFLOWcell
-  \name{flow}
-  \location{1,1}
-  \text{\bf\Base Flow Volodymyr Prokopyuk Vorokhta and Svitlana}
-  \shape{5}
-  \connection[rl]{chart}
-\stopFLOWcell
-\startFLOWcell
-  \name{chart}
-  \location{2,1}
-  \text{Chart}
-\stopFLOWcell
-\stopFLOWchart
-\FLOWchart[chart:mision]
-
-\Paragraph{Innovación constante en soluciones IT personalizadas de calidad y IT
-consultoría}
+\Paragraph{Innovación constante en las soluciones IT de calidad personalizadas y
+en los servicios de consultoría IT}
 
 La empresa se crea con la intención de ser un líder en la aplicación de
 soluciones innovadoras y creativas al diseño y desarrollo de las soluciones a
@@ -234,7 +234,19 @@ implementación e implantación en el cliente.
 
 \Comment{La aspiración más alta de la empresa que perdura en el tiempo}
 
-\Paragraph{Crear el valor para el cliente mediante la innovación y la
+\midaligned{
+\setupFLOWcharts[width=31\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:vision]
+\startFLOWcell
+  \name{vision}
+  \location{1,1}
+  \text{\bf\Base Crear el valor para los clientes mediante la innovación y la
+  tecnología}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:vision]}
+
+\Paragraph{Crear el valor para los clientes mediante la innovación y la
 tecnología}
 
 La aspiración más alta de la empresa consiste en ser el líder en la aplicación
@@ -258,6 +270,47 @@ el el tiempo garantizando en futuro de la empresa y el futuro de sus clientes.
 
 \Comment{Los principios que guían la actividad de la empresa}
 
+\midaligned{
+\setupFLOWcharts[width=9\bodyfontsize,height=6\bodyfontsize]
+\startFLOWchart[chart:valores]
+\startFLOWcell
+  \name{satisfaccion}
+  \location{1,1}
+  \text{\bf\Base Compromiso con la satisfacción del cliente}
+\stopFLOWcell
+\startFLOWcell
+  \name{innovacion}
+  \location{2,1}
+  \text{\bf\Base Compromiso con la innovación y la excelencia}
+\stopFLOWcell
+\startFLOWcell
+  \name{calidad}
+  \location{3,1}
+  \text{\bf\Base Compromiso con la calidad y la mejora continua}
+\stopFLOWcell
+\startFLOWcell
+  \name{valor}
+  \location{2,2}
+  \text{\bf\Base Creación de valor para el cliente}
+\stopFLOWcell
+\startFLOWcell
+  \name{pasion}
+  \location{1,3}
+  \text{\bf\Base Pasión por lo que hago}
+\stopFLOWcell
+\startFLOWcell
+  \name{relaciones}
+  \location{2,3}
+  \text{\bf\Base Construir las relaciones honestas y abiertas}
+\stopFLOWcell
+\startFLOWcell
+  \name{responsabilidad}
+  \location{3,3}
+  \text{\bf\Base Compromiso con la sostenibilidad y la responsabilidad}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:valores]}
+
 \Paragraph{Creación de valor para el cliente}
 
 El propósito principal de la actividad de empresa es la creación de valor para
@@ -273,13 +326,13 @@ los servicios de consultoría IT.
 
 \Paragraph{Compromiso con la satisfacción del cliente}
 
-Lo más importante para la empresa es asegurar el cresimiento y el desarrollo
+Lo más importante para la empresa es asegurar el crecimiento y el desarrollo
 sostenible y continuo para el futuro lo cual es posible solo a través de la
-construcción de las relaciónes duraderas, de confianza y a largo plazo con los
+construcción de las relaciones duraderas, de confianza y a largo plazo con los
 clientes. El criterio más importante en las relaciones entre la empresa y los
-clientes es la satisfacción de los clientes. Es porque toda la activida de la
-empresa está enfocada para conseguir este objetivo. El cliente se seinte
-satisfecho cuando el recibie un trato adecuado, soluciones de calidad que
+clientes es la satisfacción de los clientes. Es porque toda la actividad de la
+empresa está enfocada para conseguir este objetivo. El cliente se siente
+satisfecho cuando el recibe un trato adecuado, soluciones de calidad que
 resuelven sus problemas, consultoría profesional. Es muy importante escuchar al
 cliente y dar las soluciones a sus necesidades de forma eficaz y eficiente en
 los plazos mínimos por el precio mínimo.
@@ -287,22 +340,22 @@ los plazos mínimos por el precio mínimo.
 \Paragraph{Compromiso con la innovación y la excelencia}
 
 Para crear valor para el cliente y satisfacer las necesidades del cliente hay
-que emplear métodos eficacez y eficientes. En la empresa la innovacion se
+que emplear métodos eficaces y eficientes. En la empresa la innovación se
 considera como la opción más eficiente de satisfacer al cliente. La innovación
-signifaca la aplicación de métodos nuemos y optimizados en las soluciones y
+significa la aplicación de métodos nuevos y optimizados en las soluciones y
 entonces métodos más eficientes que dan mejor resultado en menor tiempo por
 menor coste. El compromiso con la excelencia asegura la calidad de los
 productos, la consultoría de confianza y entonces la lealtad de los clientes,
-la seguridade de los clientes en que sus necesidades serán satisfechos con la
+la seguridad de los clientes en que sus necesidades serán satisfechos con la
 mejor solución posible. El compromiso con la excelencia permite ganar y retener
 a los clientes por un lado y mejorar la imagen de la empresa por otro.
 
-\Paragraph{Compromiso con la caliad y la mejora continua}
+\Paragraph{Compromiso con la calidad y la mejora continua}
 
 Para el cliente la calidad significa la conformidad de las soluciones entregadas
-con los requerimientos previametne acordados. Mientras más se aproxima la
+con los requerimientos previamente acordados. Mientras más se aproxima la
 solución entregada a lo que tenía pensado en cliente y mientras mejor la
-solución resuelve las necesidades del clietente mayor calidad tendrá el producto
+solución resuelve las necesidades del cliente mayor calidad tendrá el producto
 ofrecido. En la empresa la mejora continua garantiza la alta calidad de los
 productos debido a que todas las incidencias se resuelven y todas las formas de
 mejorar el producto serán aplicados. La mejora continua permite la aproximación
@@ -313,12 +366,12 @@ así se demuestra el compromiso de la empresa con los clientes a largo plazo.
 \Paragraph{Pasión por lo que hago}
 
 Sin el compromiso personal no hay compromiso social. Todo lo que se hace en la
-empresa es porque las personas quieren hacerlo y se sientes horgullosos de lo
+empresa es porque las personas quieren hacerlo y se sientes orgullosos de lo
 que hacen. Si las personas se sienten responsables y tienen poder de tomas las
 decisiones el trabajo saldrá mucho mejor, creativo e innovador. Yo creo la
-empresa porque siento pación por lo que hago y estoy preparado afrontar los
-retos que supone crear y gestionar con éxito una empresa. Solo los profecionales
-en su cambo de actividad que creen en si mismos pueden llegar al éxtito. Si te
+empresa porque siento pasión por lo que hago y estoy preparado afrontar los
+retos que supone crear y gestionar con éxito una empresa. Solo los profesionales
+en su cambo de actividad que creen en si mismos pueden llegar al éxito. Si te
 gusta tu trabajo y si quieres de verdad ayudar a la gente creando las soluciones
 y asesorando las decisiones con el trabajo continuo se llega al éxito.
 
@@ -350,6 +403,60 @@ mejorar el mundo, crear el valor para los clientes y hacer a sonreír a la gente
 \section{Metas}%{Goals}
 
 \Comment{Adónde ir y cuando llegar ahí}
+
+\midaligned{
+\setupFLOWcharts[width=15\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:metas]
+\startFLOWcell
+  \name{innovacion}
+  \location{1,1}
+  \text{\bf\Base Innovación constante}
+  \connection[rl]{tecnologia}
+\stopFLOWcell
+\startFLOWcell
+  \name{tecnologia}
+  \location{2,1}
+  \text{\bf\Base Utilizar la última tecnología en las soluciones}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{personalizadas}
+  \location{1,2}
+  \text{\bf\Base Soluciones IT personalizadas}
+  \connection[rl]{clientes}
+\stopFLOWcell
+\startFLOWcell
+  \name{clientes}
+  \location{2,2}
+  \text{\bf\Base Crear una amplia cartera de clientes loyales}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{calidad}
+  \location{1,3}
+  \text{\bf\Base Soluciones IT de calidad}
+  \connection[rl]{qa}
+\stopFLOWcell
+\startFLOWcell
+  \name{qa}
+  \location{2,3}
+  \text{\bf\Base Establecer los procesos de QA (Quality Assurance) para las
+  soluciones}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{consultoria}
+  \location{1,4}
+  \text{\bf\Base Servicios personalizados de calidad de consultoría IT}
+  \connection[rl]{conocimiento}
+\stopFLOWcell
+\startFLOWcell
+  \name{conocimiento}
+  \location{2,4}
+  \text{\bf\Base Incrementar el conocimiento de los servicios de consultoría IT}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:metas]}
 
 \Paragraph{Innovación constante \AwRArrowLong\ Utilizar la última tecnología en
 las soluciones}
@@ -395,7 +502,7 @@ entrega y mejorar la imagen de la empresa como un proveedores de soluciones
 fiables. El establecimiento de los procesos de calidad mejora la eficacia y la
 eficiencia de todas las actividades de empresa en general.
 
-\Paragraph{Servicios personalizados de calidad de consultoría \AwRArrowLong\
+\Paragraph{Servicios personalizados de calidad de consultoría IT \AwRArrowLong\
 Incrementar el conocimiento de los servicios de consultoría IT}
 
 Aparte de los servicios de diseño y desarrollo de las soluciones para los
@@ -506,6 +613,44 @@ informáticos
 \Comment{Oportunidades y amenazas}
 
 \section{Tendencias en la industria IT}%{Industry trends}
+
+\midaligned{
+\setupFLOWcharts[width=15\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:tendencias]
+\startFLOWcell
+  \name{virt}
+  \location{1,1}
+  \text{\bf\Base Virtualización/IaaS (Infrastructure as a Service)}
+\stopFLOWcell
+\startFLOWcell
+  \name{nube}
+  \location{2,1}
+  \text{\bf\Base Nube/SaaS (Software as a Service)}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{software}
+  \location{1,2}
+  \text{\bf\Base Software de código abierto}
+\stopFLOWcell
+\startFLOWcell
+  \name{moviles}
+  \location{2,2}
+  \text{\bf\Base Dispositivos móviles}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{html}
+  \location{1,3}
+  \text{\bf\Base Adopción de HTML5 y CSS3}
+\stopFLOWcell
+\startFLOWcell
+  \name{asinc}
+  \location{2,3}
+  \text{\bf\Base Modelo asíncrono de ejecución en el servidor/cliente}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:tendencias]}
 
 La empresa pretende operar en la industria de tecnología de información. La
 empresa ofrece los servicios IT para los negocios de los clientes. Las
@@ -717,7 +862,7 @@ invento. JavaScript es el lenguaje de programación de la Web. Con la
 introducción de Node.js en la parte de servidor JavaScript se ha convertido
 un un lenguaje de programación universal de la Web tanto en la parte de cliente
 como en la parte de servidor. Las aplicaciones web más innovadores hoy en día
-son isomorficas. Las aplicaciones isomorficas se pueden ejecutar tanto en el
+son isomorfas. Las aplicaciones isomorfas se pueden ejecutar tanto en el
 servidor como en el cliente. Si la petición al servidor Web se realiza desde un
 cliente con capacidades de procesamiento de JavaScript (por ejemplo un navegador
 Web) el servidor responde inmediatamente al cliente con la aplicación que se va
@@ -819,15 +964,15 @@ para la empresa, es la garantía del futuro crecimiento y éxito de la empresa
 involucra muchas personas que son profesionales en sus áreas de actividad. El
 proceso de compra de las soluciones IT es más consciente y formal. Los clientes
 B2B tienen las necesidades y los requerimientos bien pensados. Los clientes B2B
-evaluan varias opciones y la decición de compra es más pensada y evaluada por
+evaluan varias opciones y la decisión de compra es más pensada y evaluada por
 varias personas. Las personas involucradas en el proceso de compra de las
-soluciones IT son profecionales y conocen bien el mercado, las soluciones
+soluciones IT son profesionales y conocen bien el mercado, las soluciones
 alternativas y los beneficios de cada una de las soluciones IT
 \item Los clientes B2B están mucho mejor informados sobre la solución IT que
 quieren comprar. Antes de comprar los clientes estudian las diferentes
-alternativas de las solucioens IT. En este proceso los clientes B2B aprenden
+alternativas de las soluciones IT. En este proceso los clientes B2B aprenden
 mucho sobre las prestaciones y las características de cada solución IT, sobre el
-procesos internos de desarrllo y sobre los valores y los compromisos de las
+procesos internos de desarrollo y sobre los valores y los compromisos de las
 empresas fabricantes. El compromiso de la empresa con la innovación y la mejora
 continua mejora considerablemente la posición de la empresa frente a la
 competencia
@@ -852,10 +997,11 @@ pago
 \section{Competencia}%{Competition}
 
 La competencia de la empresa son otras empresas del sector que ofrecen las
-soluciones IT dentro del modelo B2B. La diferencia más importante que sitúa
-a la empresa en una posición de ventaja en comparación con la competencia es el
+soluciones IT dentro del modelo B2B. La diferencia más importante que sitúa a la
+empresa en una posición de ventaja en comparación con la competencia es el
 compromiso fuerte de la empresa con la innovación y la relación calidad/precio
-superior.
+superior de las soluciones IT y los servicios de consultoría IT que ofrece la
+empresa.
 
 \chapter{Descripción de la empresa}%{Company description}
 
@@ -866,35 +1012,56 @@ superior.
 \subsection{Resumen de los productos y servicios}
 %{Products and services summary}
 
+\midaligned{
+\setupFLOWcharts[width=20\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:productos]
+\startFLOWcell
+  \name{soluciones}
+  \location{1,1}
+  \text{\bf\Base Soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{consultoria}
+  \location{1,2}
+  \text{\bf\Base Servicios de consultoría IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{mantenimiento}
+  \location{1,3}
+  \text{\bf\Base Mantenimiento y modificación de las soluciones IT}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:productos]}
+
 \Paragraph{Soluciones IT}
 
-La actividad principal de la emresa va a estar dirigida a la elaboración de las
+La actividad principal de la empresa va a estar dirigida a la elaboración de las
 soluciones IT para los clientes. Habitualmente las soluciones IT consisten en el
 software y los sistemas de información por un lado y la infraestructura de
 hardware y comunicaciones por otro lado. La empresa se va a centrar en la parte
 de diseño y desarrollo de software porque es la parte donde más se emplea la
 capacidad intelectual y los conocimientos, la innovación y la creatividad. En el
-diseño y el desarrollo de software hay mucho margen de maniobra y es dodne la
+diseño y el desarrollo de software hay mucho margen de maniobra y es donde la
 empresa destaca ofreciendo mejores soluciones innovadores y creativas a los
 clientes. Hay mucha formas de construir el software y los que los hacer
 realmente bien logran el éxito, incrementan su cartera de clientes loyales y
-determinan las futuras diracción del desarrollo de sistemas informáticos. La
-parte de infraestructura de hardware y las redes de conumicaciones de sistemas
+determinan las futuras dirección del desarrollo de sistemas informáticos. La
+parte de infraestructura de hardware y las redes de comunicaciones de sistemas
 diseñados se va a subcontratar. De esta manera la empresa puede mejor centrarse
 en el desarrollo y perfección se la actividad principal de diseño e
-implementación de software. La subcontratación de servcios de infraestructura
+implementación de software. La subcontratación de servicios de infraestructura
 de hardware y de las redes de comunicaciones permite reducir los costes y los
 plazos de entrega de los productos IT. La subcontratación beneficia tanto al
 cliente como a la empresa.
 
-Los sistemas de software son muy diversos en muchas caracterísiticas: sistemas
+Los sistemas de software son muy diversos en muchas características: sistemas
 complejos y sistemas simples, sistemas en la parte cliente y en la parte
-servidor, sistemas que impelmenta la lógica de negoción y sistemas de control
-de calidad de datos, sistemas que ofrecen los intarfaces de conexión y sistemas
+servidor, sistemas que implementa la lógica de negocio y sistemas de control
+de calidad de datos, sistemas que ofrecen los interfaces de conexión y sistemas
 de integración. La empresa pretende ofrecer al cliente las soluciones IT
-completas para su negecio lo cual obliga a controls un abánico muy amplio de
+completas para su negocio lo cual obliga a controls un abanico muy amplio de
 tecnologías y métodos tecnológicos. A pesar de tanta variedad de tecnologías el
-cliente objetivo normalmente tiene problemas comunes a resolver y es dodne se
+cliente objetivo normalmente tiene problemas comunes a resolver y es donde se
 aprovecha del efecto experiencias y las sinergias de conocimientos adquiridos en
 los proyectos anteriores. Los principales soluciones IT que ofrece la empresa
 son los siguientes:
@@ -904,7 +1071,7 @@ sistemas core de negocio de cliente
 \item Sistemas back end que implementan la lógica core de negocio de los
 clientes
 \item Integración de sistemas del clientes con terceros
-\item Systemas de presencia Web en Intenet: sistios web de las companias o
+\item Sistemas de presencia Web en Internet: sitios web de las compañías o
 productos específicos de los clientes
 \item Aplicaciones web de venta de los productos o consumo de los servicios que
 ofrece el cliente
@@ -915,7 +1082,7 @@ servicios que ofrece el cliente
 \item Sistemas de monitorización y control de procesos
 \stopitemize
 
-\Paragraph{Consultoría IT}
+\Paragraph{Servicios de consultoría IT}
 
 La empresa ofrece a los clientes los servicios de consultoría IT. Los servicios
 de consultoría IT tienen un gran impacto en el éxito futuro de los proyectos de
@@ -926,11 +1093,11 @@ dentro de un paquete se consultoría IT más la solución IT basada en los
 resultados de la consultoría IT. Los servicios de consultoría IT permiten a los
 clientes evaluar las ventajas y los inconvenientes de varias opciones
 tecnológicas y al final elegir la opción que más se adapta a las necesidades del
-clietene o incluso combinar las opciones disponibles en un formula de éxito.
-Dentro de las opciones que seirve la consultoría IT se encuantran los
+cliente o incluso combinar las opciones disponibles en un formula de éxito.
+Dentro de las opciones que sirve la consultoría IT se encuentran los
 siguientes:
 \startitemize
-\item Asesoramiento de arquitectura de sistemas informaticos y las solucioens a
+\item Asesoramiento de arquitectura de sistemas informáticos y las soluciones a
 proporcionar
 \item Asesoramiento de las tecnologías y modelos de ejecución a utilizar en las
 soluciones
@@ -938,36 +1105,77 @@ soluciones
 \item Sugerencias de infraestructura de hardware que mejor responde a las
 necesidades de cliente
 \item Valoración cualitativa y valoración cuantitativas entre varias opciones
-porpuestas a elegir
-\item Evaluación de capaciadad de procesamiento según la carga de peticiones al
+propuestas a elegir
+\item Evaluación de capacidad de procesamiento según la carga de peticiones al
 sistema con la posibilidades se futuras ampliaciones
 \item Evaluación de la disponibilidad y la fiabilidad total del sistemas a
 desarrollar
 \stopitemize
 
-\Paragraph{Mantenimiento y modificaión de las soluciones}
+\Paragraph{Mantenimiento y modificación de las soluciones IT}
 
-La empresa tambien ofrece los servicios de mantenimiento de las soluciones
+La empresa también ofrece los servicios de mantenimiento de las soluciones
 desarrolladas, las actualizaciones de software y las modificación y cambio
 necesarios para adaptar las soluciones a los cambios futuros imprevistos en la
-fase de diseño inicial de las soluciones. Tenciendo en cuenta que el mundo de
+fase de diseño inicial de las soluciones. Teniendo en cuenta que el mundo de
 negocio y el mundo de tecnologías de información cambia muy rápido las
-necesidades de adaptar las solucioens surgen muy amenudo. Para responde a estos
-cambios la empresa ofrece los servicios de mantenimiento y modificaión de las
+necesidades de adaptar las soluciones surgen muy a menudo. Para responde a estos
+cambios la empresa ofrece los servicios de mantenimiento y modificación de las
 soluciones. Estos servicios se pueden contratar aparte de la solución IT
-principal o estar incluidos dentor del paquete junto con los servicios de
+principal o estar incluidos dentro del paquete junto con los servicios de
 consultoría IT y las soluciones IT a desarrollar. La empresa ofrece los
 siguientes servicios:
 \startitemize
-\item Mantenimiento de software y las solucioens desarrolladas
+\item Mantenimiento de software y las soluciones desarrolladas
 \item Realización de cambios y modificaciones en las soluciones
-\item Amplicación de capacidad y escalado de servicio que prestan las soluciones
+\item Ampliación de capacidad y escalado de servicio que prestan las soluciones
 \item Incremento de la fiabilidad y la disponibilidad de los servicios
 \item Monitorización y el control del funcionamiento de las soluciones
 \stopitemize
 
 \subsection{Características de los productos y servicios clave}
 %{Key product and service features}
+
+\midaligned{
+\setupFLOWcharts[width=9\bodyfontsize,height=5\bodyfontsize]
+\startFLOWchart[chart:chars]
+\startFLOWcell
+  \name{fiabilidad}
+  \location{1,1}
+  \text{\bf\Base Fiabilidad de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{disponibilidad}
+  \location{2,1}
+  \text{\bf\Base Disponibilidad de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{flexibilidad}
+  \location{3,1}
+  \text{\bf\Base Flexibilidad de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{calidad}
+  \location{2,2}
+  \text{\bf\Base Calidad de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{plazos}
+  \location{1,3}
+  \text{\bf\Base Cortos plazos de entrega}
+\stopFLOWcell
+\startFLOWcell
+  \name{relacion}
+  \location{2,3}
+  \text{\bf\Base Relación calidad/precio superior a la competencia}
+\stopFLOWcell
+\startFLOWcell
+  \name{precio}
+  \location{3,3}
+  \text{\bf\Base Precio aceptable}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:chars]}
 
 \Paragraph{Calidad}
 
@@ -1070,7 +1278,39 @@ tecnologías IT más apropiadas para los clientes
 
 \subsection{Beneficios clave para el cliente}%{Key customer benefits}
 
-\Paragraph{Soluciones y consultoría de alta calidad}
+\midaligned{
+\setupFLOWcharts[width=9\bodyfontsize,height=6\bodyfontsize]
+\startFLOWchart[chart:beneficios]
+\startFLOWcell
+  \name{fiabilidad}
+  \location{1,1}
+  \text{\bf\Base Soluciones IT de alta fiabilidad y disponibilidad}
+\stopFLOWcell
+\startFLOWcell
+  \name{flexibilidad}
+  \location{3,1}
+  \text{\bf\Base Soluciones IT flexibles}
+\stopFLOWcell
+\startFLOWcell
+  \name{calidad}
+  \location{2,2}
+  \text{\bf\Base Soluciones IT y los servicios de consultoría IT de alta
+  calidad}
+\stopFLOWcell
+\startFLOWcell
+  \name{plazos}
+  \location{1,3}
+  \text{\bf\Base Cortos plazos de entrega de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{relacion}
+  \location{3,3}
+  \text{\bf\Base Superior relación calidad/precio frente a la competencia}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:beneficios]}
+
+\Paragraph{Soluciones IT y los servicios de consultoría IT de alta calidad}
 
 La ventaja para el cliente de la empresa consiste en que el cliente siempre
 recibe el producto de calidad. La calidad de producto es el compromiso principal
@@ -1081,7 +1321,7 @@ desarrollo de las soluciones aumentan la calidad de los productos. La soluciones
 de la empresa siempre están en conformidad con los requerimientos de los
 clientes anticipando los posibles problemas y dificultades.
 
-\Paragraph{Soluciones de alta fiabilidad y disponibilidad}
+\Paragraph{Soluciones IT de alta fiabilidad y disponibilidad}
 
 La soluciones de la empresa son fiables. La fiabilidad de las soluciones
 garantiza al cliente los resultados correctos de funcionamiento del sistema en
@@ -1096,7 +1336,7 @@ aplicaciones desplegadas están funcionando mejora la posición de la empresa en
 los ojos de sus clientes y le permite centrar sus esfuerzos en la actividad
 principal.
 
-\Paragraph{Soluciones flexibles}
+\Paragraph{Soluciones IT flexibles}
 
 En el mundo tecnológico disponer de una solución flexible que permite cambios
 rápidos en su funcionamiento consta una gran ventaja para los clientes. Todas
@@ -1109,7 +1349,7 @@ soluciones que ofrece la empresa. El escalado y el aumento de potencia para
 servir la demanda creciente de las peticiones se hace fácil con los sistemas
 diseñadas por la empresa.
 
-\Paragraph{Cortos plazos de entrega de las soluciones}
+\Paragraph{Cortos plazos de entrega de las soluciones IT}
 
 La ventaja de cortos plazos de entrega de las soluciones a los clientes es sin
 duda de mucho valor. Los métodos innovadores permiten reducir los tiempos de
@@ -1121,7 +1361,7 @@ el cliente ve crecer a la solución de manera natural probándola en las
 condiciones naturales. La empresa pretende ser reactiva e incluso proactiva
 anticipando las necesidades de los clientes.
 
-\Paragraph{Superior relación calidad/precio}
+\Paragraph{Superior relación calidad/precio frente a la competencia}
 
 La empresa ofrece a los clientes el producto único porque la relación
 calidad/precio en las soluciones es muy alto en comparación con otras soluciones
@@ -1137,6 +1377,27 @@ Satisfacer al cliente es la mayor prioridad para la empresa.
 \Comment{Ventajas competitivas}
 
 \subsection{I+D}%{R+D}
+
+\midaligned{
+\setupFLOWcharts[width=20\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:investigacion]
+\startFLOWcell
+  \name{desarrollo}
+  \location{1,1}
+  \text{\bf\Base Innovación en los métodos de diseño y desarrollo de software}
+\stopFLOWcell
+\startFLOWcell
+  \name{mejora}
+  \location{1,2}
+  \text{\bf\Base Mejora continua de los procesos QA (Quality Assurance)}
+\stopFLOWcell
+\startFLOWcell
+  \name{gestion}
+  \location{1,3}
+  \text{\bf\Base Innovación en la gestión de los proyectos de software}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:investigacion]}
 
 En la empresa el área de I+D es muy importante porque es estrategia de la
 empresa pone mucha énfasis en la innovación. Los productos de la empresa
@@ -1167,30 +1428,59 @@ encontrar mejores formas de construir las baterías de pruebas automatizadas,
 qué probar cómo probar y cuáles son los invariantes críticos para el
 funcionamiento correcto de la solución.
 
-La tercera línea de las actividades de I+D se dedica a la gestión de proyectos.
-La gestión de proyecto en mucha parte determina el éxito de la solución a
-proporcionar. Los métodos innovadores de gestión de proyecto permiten mejorar y
-agilizar tales etapas del proyecto como la gestión de clientes, la toma de
-requerimientos, programación de las etapas de desarrollo y las fechas de los
-entregables, las pruebas, la puesta en marcha de las soluciones y la
-configuración. La gestión de los proyectos mejora el trabajo en equipo y
-buenas relaciones con los clientes. Las actividades de I+D se centran en las
-metodologías ágiles de gestión de proyectos, la gestión de tiempo, optimización
-de los proceso de desarrollo.
+La tercera línea de las actividades de I+D se dedica a la gestión de los
+proyectos de software.  La gestión de proyecto en mucha parte determina el éxito
+de la solución a proporcionar. Los métodos innovadores de gestión de proyecto
+permiten mejorar y agilizar tales etapas del proyecto como la gestión de
+clientes, la toma de requerimientos, programación de las etapas de desarrollo y
+las fechas de los entregables, las pruebas, la puesta en marcha de las
+soluciones y la configuración. La gestión de los proyectos mejora el trabajo en
+equipo y buenas relaciones con los clientes. Las actividades de I+D se centran
+en las metodologías ágiles de gestión de proyectos, la gestión de tiempo,
+optimización de los proceso de desarrollo.
 
 \subsection{Operaciones}%{Operations}
 
-\startitemize
-\item Produce products and provide services
-\item Location (Madrid, near your customers)
-\item Equipment (PC, Servers, Software)
-\item Labor (design, implement, test, deliver, support)
-\item Process (account contacts, product/service definition meetings,
-production, customer support)
-\item Suppliers
-\item Manufacturing
-\item Quality control
-\stopitemize
+\midaligned{
+\setupFLOWcharts[width=20\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:operaciones]
+\startFLOWcell
+  \name{gestion}
+  \location{1,1}
+  \text{\bf\Base Gestión de los clientes de la empresa}
+\stopFLOWcell
+\startFLOWcell
+  \name{requerimientos}
+  \location{1,2}
+  \text{\bf\Base Toma de los requerimientos de las soluciones IT a desarrollar}
+\stopFLOWcell
+\startFLOWcell
+  \name{desenio}
+  \location{1,3}
+  \text{\bf\Base Diseño de la arquitectura de las soluciones IT a desarrollar}
+\stopFLOWcell
+\startFLOWcell
+  \name{desarrollo}
+  \location{1,4}
+  \text{\bf\Base Desarrollo de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{qa}
+  \location{1,5}
+  \text{\bf\Base Realización de los procesos de QA}
+\stopFLOWcell
+\startFLOWcell
+  \name{despliegue}
+  \location{1,6}
+  \text{\bf\Base Despliegue y configuración de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{mantenimiento}
+  \location{1,7}
+  \text{\bf\Base Mantenimiento y modificación de las soluciones IT}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:operaciones]}
 
 La actividad principal de la empresa es la construcción, la venta de software y
 otros servicio IT para el negocio de los clientes. La construcción y la venta
@@ -1199,12 +1489,12 @@ coordinación. La actividad principal de la empresa se puede dividir en las
 siguientes etapas:
 \startitemize
 \item Gestión de los clientes de la empresa
-\item Toma de requerimientos de las soluciones a desarrollar
-\item Diseño de la arquitectura de las soluciones a desarrollar
-\item Desarrollo de software
+\item Toma de los requerimientos de las soluciones IT a desarrollar
+\item Diseño de la arquitectura de las soluciones IT a desarrollar
+\item Desarrollo de las soluciones IT
 \item Realización de los procesos de QA
-\item Despliegue y configuración de las soluciones
-\item Mantenimiento de las soluciones
+\item Despliegue y configuración de las soluciones IT
+\item Mantenimiento y modificación de las soluciones IT
 \stopitemize
 
 \Paragraph{Gestión de los clientes de la empresa}
@@ -1236,7 +1526,7 @@ actividad de gestión de los clientes es el contrato entre el cliente y la
 empresa para el desarrollo de la solución con las características previamente
 acordadas.
 
-\Paragraph{Toma de requerimientos de las soluciones a desarrollar}
+\Paragraph{Toma de los requerimientos de las soluciones IT a desarrollar}
 
 La toma de requisitos de las soluciones a desarrollar es una actividad muy
 importante en el proceso de desarrollo de las soluciones porque determina todo
@@ -1271,7 +1561,7 @@ ofrece la empresa a sus clientes. El resultado de la actividad de toma de los
 requerimientos es un documento con todas las detalles de funcionamiento de la
 solución a desarrollar.
 
-\Paragraph{Diseño de la arquitectura de las soluciones a desarrollar}
+\Paragraph{Diseño de la arquitectura de las soluciones IT a desarrollar}
 
 El diseño de la arquitectura de software es el proceso crucial que determina la
 calidad, la fiabilidad y la flexibilidad del futuro sistema. La arquitectura de
@@ -1292,7 +1582,7 @@ resultado del diseño de la arquitectura de software es el documento técnico qu
 describe los componentes del futuro sistema y la estructura interna de cada uno
 de los componentes junto con los flujos de información entre los componentes.
 
-\Paragraph{Desarrollo de software}
+\Paragraph{Desarrollo de las soluciones IT}
 
 El desarrollo de software presenta la construcción de código fuente de la
 solución a partir de la arquitectura previamente diseñada. Este proceso
@@ -1345,7 +1635,7 @@ componentes verificando la funcionalidad de los bloques integrados pos los
 componentes funcionales. El resultado de las actividades de QA es la solución
 probada y verificada lista para el despliegue.
 
-\Paragraph{Despliegue y configuración de las soluciones}
+\Paragraph{Despliegue y configuración de las soluciones IT}
 
 El despliegue y la configuración de la solución son los procesos de puesta en
 marcha de la solución. Dependiendo de la infraestructura de hardware y la
@@ -1364,7 +1654,7 @@ entrono concreto y optimizar el servicio que se presta. El resultado de las
 actividades de despliegue y configuración el el sistema funcionando
 correctamente en producción.
 
-\Paragraph{Mantenimiento de las soluciones}
+\Paragraph{Mantenimiento y modificación de las soluciones IT}
 
 El mantenimiento de las soluciones es la fase más larga en el ciclo de vida de
 la solución. Las tareas de mantenimiento comprenden la actualización de software
@@ -1464,7 +1754,7 @@ hasta los servicios de BI (Business Intelligence).
 \subsection{Gestión de recursos y organización}%{Management}
 
 La empresa es una empresa de un solo empleado yo. Todas las decisiones
-estratégicas y tácticas voy a tomar yo. La dirección de la empresa es enfocada
+estratégicas y tácticas voy a tomar yo. La dirección de la empresa está enfocada
 a la eficiencia, la innovación y la proactividad.
 
 %\subsection{Organización}%{Organization}
@@ -1483,6 +1773,51 @@ a la eficiencia, la innovación y la proactividad.
 
 \Paragraph{Oportunidades}
 
+\midaligned{
+\setupFLOWcharts[width=15\bodyfontsize,height=10\bodyfontsize]
+\startFLOWchart[chart:oportunidades]
+\startFLOWcell
+  \name{virt}
+  \location{1,1}
+  \text{\bf\Base Avances tecnológicos en la virtualización de hardware permiten
+  reducir los costes de hardware de los servidores}
+\stopFLOWcell
+\startFLOWcell
+  \name{nube}
+  \location{2,1}
+  \text{\bf\Base Crecimiento de la nube promueve las plataformas de bajo coste
+  de despliegue de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{software}
+  \location{1,2}
+  \text{\bf\Base Desarrollo activo y utilización en producción de los sistemas
+  de código abierto que reducen los costes y mejoran la calidad de las
+soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{moviles}
+  \location{2,2}
+  \text{\bf\Base Expansión de los dispositivos móviles extiende el mercado
+  potencial para las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{html}
+  \location{1,3}
+  \text{\bf\Base Adopción industrial de HTML5 y CSS3 permite a la empresa
+  utilizar la misma tecnología para el desarrollo de las aplicaciones web y de
+  las aplicaciones para los dispositivos móviles aprovechando las sinergias}
+\stopFLOWcell
+\startFLOWcell
+  \name{asinc}
+  \location{2,3}
+  \text{\bf\Base Utilización del modelo asíncrono de ejecución tanto en el
+  servidor como en el cliente unifica las prácticas de diseño e implementación
+  de las aplicaciones y consolida los conocimientos}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:oportunidades]}
+
 La situación y las tendencias en la industria favorecen el crecimiento de la
 empresa. Las tendencias favorables en la industria son:
 \startitemize
@@ -1495,7 +1830,7 @@ el modelo B2B (Business to Business)
 abierto que reducen los costes y mejoran la calidad de las soluciones IT de la
 empresa
 \item Expansión de los dispositivos móviles extiende el mercado potencial para
-las soluciones de la empresa
+las soluciones IT de la empresa
 \item Adopción industrial de HTML5 y CSS3 permite a la empresa utilizar la misma
 tecnología para el desarrollo de las aplicaciones web y de las aplicaciones para
 los dispositivos móviles aprovechando las sinergias de experiencia de desarrollo
@@ -1509,11 +1844,23 @@ de la arquitectura cliente/servidor
 
 \Paragraph{Amenazas}
 
+\midaligned{
+\setupFLOWcharts[width=20\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:amenazas]
+\startFLOWcell
+  \name{competencia}
+  \location{1,1}
+  \text{\bf\Base Competencia}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:amenazas]}
+
 La amenaza principal de la empresa es la competencia. En el mercado hay muchas
 empresas que se dedican al desarrollo del software con una clientela ya
 establecida. La ventaja más importante que sitúa a la empresa en una posición de
 ventaja en comparación con la competencia es el compromiso fuerte de la empresa
-con la innovación y la relación calidad/precio superior.
+con la innovación y la relación calidad/precio superior de las soluciones IT y
+de los servicios de consultoría IT.
 
 \subsection{Productos y servicios, capacidades de la empresa}
 %{Products and services, business capabilities}
@@ -1521,6 +1868,78 @@ con la innovación y la relación calidad/precio superior.
 \Comment{Puntos fuertes y débiles}
 
 \Paragraph{Puntos fuertes}
+
+\midaligned{
+\setupFLOWcharts[width=15\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:fortalezas]
+\startFLOWcell
+  \name{calidad}
+  \location{1,1}
+  \text{\bf\Base Soluciones IT y los servicios de consultoría IT de alta
+  calidad}
+\stopFLOWcell
+\startFLOWcell
+  \name{fiabilidad}
+  \location{2,1}
+  \text{\bf\Base Soluciones IT de alta fiabilidad y disponibilidad}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{flexibilidad}
+  \location{1,2}
+  \text{\bf\Base Soluciones IT flexibles}
+\stopFLOWcell
+\startFLOWcell
+  \name{plazos}
+  \location{2,2}
+  \text{\bf\Base Cortos plazos de entrega de la soluciones IT}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{relacion}
+  \location{1,3}
+  \text{\bf\Base Relación calidad/precio superior de las soluciones IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{valor}
+  \location{2,3}
+  \text{\bf\Base Creación de valor para los clientes}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{satisfaccion}
+  \location{1,4}
+  \text{\bf\Base Compromiso con la satisfacción del cliente}
+\stopFLOWcell
+\startFLOWcell
+  \name{innovaion}
+  \location{2,4}
+  \text{\bf\Base Compromiso con la innovación y la excelencia}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{mejora}
+  \location{1,5}
+  \text{\bf\Base Compromiso con la calidad y la mejora continua}
+\stopFLOWcell
+\startFLOWcell
+  \name{pasion}
+  \location{2,5}
+  \text{\bf\Base Pasión por lo que hago}
+\stopFLOWcell
+
+\startFLOWcell
+  \name{relaciones}
+  \location{1,6}
+  \text{\bf\Base Construir las relaciones honestas y abiertas}
+\stopFLOWcell
+\startFLOWcell
+  \name{responsabilidad}
+  \location{2,6}
+  \text{\bf\Base Compromiso con la sostenibilidad y la responsabilidad}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:fortalezas]}
 
 Las ventajas clave para los clientes al confiar en la empresa son los
 siguientes:
@@ -1530,14 +1949,14 @@ representa la conformidad total de las soluciones IT con los requerimientos del
 cliente y su satisfacción alta
 \item Soluciones IT de alta fiabilidad y disponibilidad que asegura la calidad y
 la continuidad en el tiempo de los servicios que presta el cliente
-\item Soluciones IT flexible que benefician al cliente con las posibilidad de
+\item Soluciones IT flexibles que benefician al cliente con las posibilidad de
 modificar la lógica de las soluciones de forma rápida y barata para adaptar las
 soluciones a los cambios del entrono de negocio
 \item Cortos plazos de entrega de la soluciones IT permiten al cliente realizar
 rápido las nuevas ideas de negocio y llegar al mercado antes que al competencia
-\item Relación calidad/precio superior que la del competencia permite al cliente
-ahorrar en los costes de las soluciones IT sin renunciar a las ventajas de un
-sistema IT de calidad
+\item Relación calidad/precio superior de las soluciones IT y los servicios de
+ consultoría IT que la del competencia permite al cliente ahorrar en los costes
+de las soluciones IT sin renunciar a las ventajas de un sistema IT de calidad
 \stopitemize
 
 El valor único que aporta la empresa para los clientes consiste en ofrecer a los
@@ -1562,6 +1981,22 @@ Los valores de la empresa son los puntos fuertes de la empresa:
 
 \Paragraph{Puntos débiles}
 
+\midaligned{
+\setupFLOWcharts[width=15\bodyfontsize,height=4\bodyfontsize]
+\startFLOWchart[chart:debilidades]
+\startFLOWcell
+  \name{experiencia}
+  \location{1,1}
+  \text{\bf\Base Falta de experiencia}
+\stopFLOWcell
+\startFLOWcell
+  \name{clientes}
+  \location{2,1}
+  \text{\bf\Base Falta de clientes}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:debilidades]}
+
 El punto débil más importante de la empresa es la falta de experiencia. La
 empresa no dispone de la cartera de clientes. La empresa tampoco tiene los
 contactos con los clientes potenciales. La forma de fortalecer los puntos
@@ -1572,12 +2007,48 @@ las soluciones IT.
 
 \subsection{Orientación estratégica}
 
+\midaligned{
+\setupFLOWcharts[width=20\bodyfontsize,height=6\bodyfontsize]
+\startFLOWchart[chart:estrategias]
+\startFLOWcell
+  \name{productos}
+  \location{1,1}
+  \text{\bf\Base Crear productos IT nuevos para fortalecer la posición de la
+  empresa en el}
+\stopFLOWcell
+\startFLOWcell
+  \name{clientes}
+  \location{1,2}
+  \text{\bf\Base Conseguir los clientes nuevos}
+\stopFLOWcell
+\startFLOWcell
+  \name{relaciones}
+  \location{1,3}
+  \text{\bf\Base Fortalecer las relaciones con los clientes potenciales y los
+  clientes actuales}
+\stopFLOWcell
+\startFLOWcell
+  \name{soluciones}
+  \location{1,4}
+  \text{\bf\Base Ofrecer las soluciones IT de calidad personalizadas basadas en
+  la innovación y la creatividad}
+\stopFLOWcell
+\startFLOWcell
+  \name{relacion}
+  \location{1,5}
+  \text{\bf\Base Ofrecer a los clientes los productos IT con la relación
+  calidad/precio superior a la competencia}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:estrategias]}
+
 La orientación estratégica de la empresa consiste en lo siguiente:
 \startitemize
-\item Crear producto IT nuevos para fortalecer la posición de la empresa en el
+\item Crear productos IT nuevos para fortalecer la posición de la empresa en el
 mercado
 \item Conseguir los clientes nuevos
-\item Fortalecer las relaciones con los clientes potenciales
+\item Fortalecer las relaciones con los clientes potenciales y los clientes
+actuales
 \item Ofrecer las soluciones IT de calidad personalizadas basadas en la
 innovación y la creatividad
 \item Ofrecer a los clientes los productos IT con la relación calidad/precio
@@ -1680,7 +2151,7 @@ provenientes de la prestación de los servicios de las consultoría IT es más
 difícil de valorar porque estos servicios son menos tangibles y dependen mucho
 de cada caso específico pero una aproximación razonable podría ser basada en la
 cantidad de tiempo que se emplea al prestar el servicio de consultoría IT
-utilizando la \in{tabla}[coste-hora].
+utilizando la \in{tabla}[tab:coste-hora].
 
 Por otro lado la naturaleza de las soluciones IT supone el mantenimiento, las
 actualizaciones y los cambios de funcionamiento de las soluciones. Los trabajos
@@ -1863,8 +2334,61 @@ refleja en el precio de software.
 
 \Source{ref:software-market-overview}
 
-\placefigure[here][fig:software-market]{Situación de mercado}
-  {\externalfigure[software-market-tier-chart.jpg][width=0.7\textwidth]}
+\midaligned{
+\setupFLOWcharts[width=31\bodyfontsize,height=7\bodyfontsize]
+\startFLOWchart[chart:segmentacion-mercado]
+\startFLOWcell
+  \name{tier1}
+  \location{1,1}
+  \text{{\bf\Base Tier 1. Enterprise}\crlf
+  \starttable[|c|c|c|c|]
+  \NC Users \NC Employees \NC Revenue \NC Cost \NC\MR
+  \HL
+  \NC 60 \endash\ 1 000+ \NC 2 000+ \NC \$250M+ \NC \$750K \endash\ \$2M \NC\MR
+  \stoptable}
+\stopFLOWcell
+\startFLOWcell
+  \name{tier2}
+  \location{1,2}
+  \text{{\bf\Base Tier 2. Upper market}\crlf
+  \starttable[|c|c|c|c|]
+  \NC Users \NC Employees \NC Revenue \NC Cost \NC\MR
+  \HL
+  \NC 30 \endash\ 1 000 \NC 1 000+ \NC \$100 \endash\ \$500M \NC \$250K \endash\ \$1.5M \NC\MR
+  \stoptable}
+\stopFLOWcell
+\startFLOWcell
+  \name{tier3}
+  \location{1,3}
+  \text{{\bf\Base Tier 3. Mid market}\crlf
+  \starttable[|c|c|c|c|]
+  \NC Users \NC Employees \NC Revenue \NC Cost \NC\MR
+  \HL
+  \NC 5 \endash\ 200 \NC 50 \endash\ 1 000 \NC \$25 \endash\ \$250M \NC \$25K \endash\ \$250K \NC\MR
+  \stoptable}
+\stopFLOWcell
+\startFLOWcell
+  \name{tier4}
+  \location{1,4}
+  \text{{\bf\Base Tier 4. Lower market}\crlf
+  \starttable[|c|c|c|c|]
+  \NC Users \NC Employees \NC Revenue \NC Cost \NC\MR
+  \HL
+  \NC 1 \endash\ 40 \NC 20 \endash\ 200 \NC \$1 \endash\ \$50M \NC \$5K \endash\ \$75K \NC\MR
+  \stoptable}
+\stopFLOWcell
+\startFLOWcell
+  \name{tier5}
+  \location{1,5}
+  \text{{\bf\Base Tier 5. Shrink wrap market}\crlf
+  \starttable[|c|c|c|c|]
+  \NC Users \NC Employees \NC Revenue \NC Cost \NC\MR
+  \HL
+  \NC 1 \endash\ 5 \NC 1 \endash\ 25 \NC \$0 \endash\ \$5M \NC \$100 \endash\ \$500 \NC\MR
+  \stoptable}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:segmentacion-mercado]}
 
 \Paragraph{Enterprise software}
 
@@ -1916,6 +2440,8 @@ flexibilidad a la hora de satisfacer las necesidades de las empresas. Sin
 embargo este software es lo que precisan las pequeñas empresas. Los principales
 proveedores de este segmento de mercado son Sage Simply Accounting e Intuit.
 
+La empresa se encuentra en el Shrink wrap software market.
+
 \section{Cliente objetivo}%{Target customer}
 
 El cliente objetivo de la empresa es el cliente de tipo B2B (Business to
@@ -1938,7 +2464,7 @@ pago
 La empresa ofrece los siguientes productos y servicios IT para el negocio de sus
 clientes:
 \startitemize
-\item Desarrollo e impalntación de las soluciones IT para el negocio de los
+\item Desarrollo e implantación de las soluciones IT para el negocio de los
 clientes
 \item Los servicios de consultoría IT para la orientación y selección de las
 tecnologías IT más apropiadas para los clientes
@@ -1975,12 +2501,35 @@ importantes que guían todas sus actividades.
 \section{Competencia}%{Competition}
 
 La competencia de la empresa son otras empresas del sector que ofrecen las
-soluciones IT dentro del modelo B2B. La diferencia más importante que sitúa
-a la empresa en una posición de ventaja en comparación con la competencia es el
+soluciones IT dentro del modelo B2B. La diferencia más importante que sitúa a la
+empresa en una posición de ventaja en comparación con la competencia es el
 compromiso fuerte de la empresa con la innovación y la relación calidad/precio
-superior.
+superior de las soluciones IT y los servicios de consultoría IT que ofrece la
+empresa.
 
 \section{Metas y objetivos de marketing}%{Marketing goals and objectives}
+
+\midaligned{
+\setupFLOWcharts[width=24\bodyfontsize,height=5\bodyfontsize]
+\startFLOWchart[chart:metas-marketing]
+\startFLOWcell
+  \name{clientes}
+  \location{1,1}
+  \text{\bf\Base Crear una amplia cartera de clientes loyales}
+\stopFLOWcell
+\startFLOWcell
+  \name{soluciones}
+  \location{1,2}
+  \text{\bf\Base Incrementar los ingresos por las ventas de las soluciones IT y
+  de los servicios de consultoría IT}
+\stopFLOWcell
+\startFLOWcell
+  \name{consultoria}
+  \location{1,3}
+  \text{\bf\Base Incrementar el conocimiento de los servicios de consultoría IT}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:metas-marketing]}
 
 \Paragraph{Crear una amplia cartera de clientes loyales}
 
@@ -2088,9 +2637,24 @@ informáticos
 %\Comment{Your business name + what makes your buisness unique and different
 %  + your market description}
 
-La empresa se posiciona en el mercado como {\bf\Gray La empresa de soluciones IT
-de calidad personalizadas y los servicios de consultoría IT para las empresas
-medianas y pequeñas de diversos tipos de actividad}.
+\midaligned{
+\setupFLOWcharts[width=31\bodyfontsize,height=7\bodyfontsize]
+\startFLOWchart[chart:posicionamiento]
+\startFLOWcell
+  \name{posicionamiento}
+  \location{1,1}
+  \text{\bf\Base La empresa de servicios IT para el negocio de los clientes
+  B2B. La empresa ofrece las soluciones IT de calidad personalizadas y los
+  servicios de consultoría IT para las empresas medianas y pequeñas de diversos
+  tipos de actividad}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:posicionamiento]}
+
+La empresa se posiciona en el mercado como la empresa de servicios IT para el
+negocio de los clientes B2B. La empresa ofrece las soluciones IT de calidad
+personalizadas y los servicios de consultoría IT para las empresas medianas y
+pequeñas de diversos tipos de actividad.
 
 La empresa ofrece las soluciones de calidad y personalizadas a los clientes.
 Cada solución se diseña y se desarrolla específicamente para un cliente teniendo
@@ -2134,6 +2698,36 @@ pequeñas de diversos tipos de actividad.
 
 \Comment{Marketing mix}
 
+\midaligned{
+\setupFLOWcharts[width=31\bodyfontsize,height=6\bodyfontsize]
+\startFLOWchart[chart:estrategias-marketing]
+\startFLOWcell
+  \name{producto}
+  \location{1,1}
+  \text{\bf\Base Soluciones IT de calidad personalizadas para cada cliente para
+  satisfacer las necesidades del cliente de la mejor forma}
+\stopFLOWcell
+\startFLOWcell
+  \name{precio}
+  \location{1,2}
+  \text{\bf\Base Soluciones IT con la relación calidad/precio superior que la
+  competencia}
+\stopFLOWcell
+\startFLOWcell
+  \name{distribucion}
+  \location{1,3}
+  \text{\bf\Base La distribución de software la empresa realiza mediante la
+  utilización del servicio público del sistema de gestión de versiones
+  github.com}
+\stopFLOWcell
+\startFLOWcell
+  \name{promocion}
+  \location{1,4}
+  \text{\bf\Base Crear una amplia cartera de clientes loyales}
+\stopFLOWcell
+\stopFLOWchart
+\FLOWchart[chart:estrategias-marketing]}
+
 \subsection{Estrategias de producto}%{Product strategies}
 
 La estrategia de producto de la empresa promueve los productos nuevos para cada
@@ -2161,7 +2755,7 @@ clientes sino que le va a dar una forma lógica y estructurada.
 \subsection{Estrategias de precio}%{Pricing strategies}
 
 La estrategia de precio posiciona a la empresa en un sector donde no hay muy
-poca competencia. El sector es de las soluciones de alta calidad y de bajo
+poca competencia. El sector es de las soluciones IT de alta calidad y de bajo
 precio. La estrategia de precio de la empresa pretende cambiar el pensamiento
 de cliente de que los productos de calidad valen mucho dinero. Reducir el precio
 ha sido posible gracias a la utilización de métodos innovadores en el diseño y
@@ -2169,7 +2763,7 @@ el desarrollo del software y por la aplicación del software de código abierto.
 
 Los costes principales de las soluciones IT están en las horas necesarias para
 producir el producto final. El coste de hora de trabajo se presenta en la
-\in{tabla}[coste-hora]. La empresa utiliza el método de asignar los precios
+\in{tabla}[tab:coste-hora]. La empresa utiliza el método de asignar los precios
 a los productos basado en los costes y en los margenes. El hecho de que los
 precios de los productos dependen solo de los precios de horas de trabajo
 necesario para elaborar la solución hace el precio bastante bajo y muy
