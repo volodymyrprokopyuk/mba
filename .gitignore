@@ -1,6 +1,5 @@
 *~
-.build/
-pdf/
-tex/img
 .ninja_log
 .ninja_deps
+pdf/
+tex/img
