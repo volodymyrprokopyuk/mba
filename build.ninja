@@ -1,0 +1,13 @@
+rule pdf
+  command = cd pdf && context --path=../tex ../$in
+  description = [ $out ]
+
+build pdf/plan_de_empresa.pdf: pdf tex/plan_de_empresa.tex | tex/layout.tex
+
+rule upload
+  command = cp pdf/plan_de_empresa.pdf ~/Dropbox/git-newmba
+  description = [ Dropbox ]
+
+build upload: upload
+
+default pdf/plan_de_empresa.pdf
